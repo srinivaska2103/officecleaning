@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z' fill='currentColor' /><path d='M35 65V35H55V45H65V65H35Z' fill='%23E8F4FF' opacity='0.85' /><path d='M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z' fill='%230F4C81' /><path d='M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z' fill='%2300A86B' /><path d='M30 65H70L65 70H35L30 65Z' fill='%2300A86B' /><rect x='47' y='70' width='6' height='12' rx='2' fill='%2300A86B' /></svg>">
+  <title>Book Facility Cleaning - CleanPro</title>
+  <meta name="description" content="Schedule commercial cleaning, deep sanitization, or floor care shifts instantly using CleanPro's 5-step interactive scheduling wizard.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0F4C81',
+              light: '#24659D',
+              dark: '#0A3357',
+            },
+            secondary: {
+              DEFAULT: '#00A86B',
+              light: '#00C37C',
+              dark: '#008E5A',
+            },
+            accent: '#E8F4FF',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 min-h-screen transition-colors duration-300 pt-20">
+
+  <!-- Header -->
+   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse" id="nav-logo-link">
+          <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+            <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
+            <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+            <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+          </svg>
+          <span class="text-xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+        </a>
+
+        <!-- Controls -->
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+         
+          <button class="dir-toggle-btn flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold" title="Toggle Layout Direction">
+            <span class="dir-toggle-text">LTR</span>
+            <i data-lucide="languages" class="w-4 h-4"></i>
+          </button>
+          <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
+            <i class="theme-toggle-icon w-5 h-5" data-lucide="moon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Title block -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="text-center space-y-2">
+      <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white">Commercial Booking Wizard</h1>
+      <p class="text-slate-500 text-sm">Design your facility maintenance contract in 5 simple steps.</p>
+    </div>
+  </section>
+
+  <!-- Step Progress Indicator -->
+  <section class="max-w-4xl mx-auto px-4 mb-10">
+    <div class="flex items-center justify-between relative">
+      <!-- Background track line -->
+      <div class="absolute top-[22px] left-0 right-0 h-1 bg-slate-200 dark:bg-slate-700 z-0"></div>
+
+      <!-- Step 1 -->
+      <div class="step-indicator flex flex-col items-center relative z-10 w-1/5">
+        <div class="step-circle w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm bg-primary text-white border-2 border-primary transition-all duration-300 shadow">1</div>
+        <span class="step-text text-[10px] sm:text-xs text-slate-500 font-semibold mt-2 text-center">Service</span>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-indicator flex flex-col items-center relative z-10 w-1/5">
+        <div class="step-circle w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm bg-white dark:bg-slate-800 text-slate-500 border-2 border-slate-350 dark:border-slate-700 transition-all duration-300">2</div>
+        <span class="step-text text-[10px] sm:text-xs text-slate-500 mt-2 text-center">Schedule</span>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-indicator flex flex-col items-center relative z-10 w-1/5">
+        <div class="step-circle w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm bg-white dark:bg-slate-800 text-slate-500 border-2 border-slate-350 dark:border-slate-700 transition-all duration-300">3</div>
+        <span class="step-text text-[10px] sm:text-xs text-slate-500 mt-2 text-center">Office</span>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-indicator flex flex-col items-center relative z-10 w-1/5">
+        <div class="step-circle w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm bg-white dark:bg-slate-800 text-slate-500 border-2 border-slate-350 dark:border-slate-700 transition-all duration-300">4</div>
+        <span class="step-text text-[10px] sm:text-xs text-slate-500 mt-2 text-center">Contact</span>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step-indicator flex flex-col items-center relative z-10 w-1/5">
+        <div class="step-circle w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm bg-white dark:bg-slate-800 text-slate-500 border-2 border-slate-350 dark:border-slate-700 transition-all duration-300">5</div>
+        <span class="step-text text-[10px] sm:text-xs text-slate-500 mt-2 text-center">Summary</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wizard Grid Content -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+    
+    <!-- Success Confirmation State (Hidden by default) -->
+    <div id="booking-confirmation-card" class="hidden max-w-2xl mx-auto bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-xl text-center space-y-6">
+      <div class="w-16 h-16 bg-emerald-100 dark:bg-emerald-950 text-emerald-500 dark:text-emerald-400 rounded-full flex items-center justify-center mx-auto shadow-inner animate-bounce">
+        <i data-lucide="check" class="w-8 h-8"></i>
+      </div>
+      <div class="space-y-2">
+        <h2 class="text-2xl font-black text-slate-900 dark:text-white">Proposal Request Received!</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Thank you for scheduling with CleanPro Facility. Your booking is pending manager validation.</p>
+      </div>
+      <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl border border-slate-100 dark:border-slate-750 inline-block font-semibold">
+        <span class="text-slate-400 text-xs block uppercase">Request Reference Code</span>
+        <span class="text-xl font-bold text-primary dark:text-secondary" id="booking-ref-id">CP-482019</span>
+      </div>
+      <p class="text-xs text-slate-500 leading-relaxed max-w-md mx-auto">
+        A certified CleanPro coordinator will email you within 2 hours to confirm your custom schedule, confirm building entry details, and issue the contract paperwork.
+      </p>
+      <div class="pt-4">
+        <a href="index.html" class="bg-primary hover:bg-primary-light text-white font-bold px-6 py-3 rounded-xl shadow-md transition-all inline-block">Return to Home</a>
+      </div>
+    </div>
+
+    <!-- Booking Form & Summary Panel -->
+    <div id="booking-card-main" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Left side wizard steps container -->
+      <form class="lg:col-span-8 bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-md space-y-8" id="booking-form">
+        
+        <!-- STEP 1: Select Service & Frequency -->
+        <div class="booking-step-content space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Select Service Category</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Which sanitization services are requested for your offices?</p>
+            <p class="text-xs text-red-500 font-semibold mt-1 hidden error-msg" id="error-step-1">Please select at least one service</p>
+          </div>
+
+          <!-- Services Grid Options -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Option 1 -->
+            <label class="border border-slate-200 dark:border-slate-700 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
+              <input type="radio" name="service" value="office-cleaning" checked class="w-4 h-4 mt-1 text-primary focus:ring-primary accent-primary dark:accent-secondary">
+              <div>
+                <span class="font-semibold text-slate-900 dark:text-white block service-title text-sm">Office Cleaning</span>
+                <span class="text-xs text-slate-500 leading-normal block mt-0.5">Recurring lobby & workstation sanitizing shifts.</span>
+              </div>
+            </label>
+
+            <!-- Option 2 -->
+            <label class="border border-slate-200 dark:border-slate-700 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
+              <input type="radio" name="service" value="deep-cleaning" class="w-4 h-4 mt-1 text-primary focus:ring-primary accent-primary dark:accent-secondary">
+              <div>
+                <span class="font-semibold text-slate-900 dark:text-white block service-title text-sm">Deep Cleaning</span>
+                <span class="text-xs text-slate-500 leading-normal block mt-0.5">Intensive top-to-bottom sanitize sweep.</span>
+              </div>
+            </label>
+
+            <!-- Option 3 -->
+            <label class="border border-slate-200 dark:border-slate-700 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
+              <input type="radio" name="service" value="commercial-cleaning" class="w-4 h-4 mt-1 text-primary focus:ring-primary accent-primary dark:accent-secondary">
+              <div>
+                <span class="font-semibold text-slate-900 dark:text-white block service-title text-sm">Commercial Buildings</span>
+                <span class="text-xs text-slate-500 leading-normal block mt-0.5">Multi-tenant blocks & large headquarters.</span>
+              </div>
+            </label>
+
+            <!-- Option 4 -->
+            <label class="border border-slate-200 dark:border-slate-700 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors">
+              <input type="radio" name="service" value="carpet-cleaning" class="w-4 h-4 mt-1 text-primary focus:ring-primary accent-primary dark:accent-secondary">
+              <div>
+                <span class="font-semibold text-slate-900 dark:text-white block service-title text-sm">Carpet Cleaning</span>
+                <span class="text-xs text-slate-500 leading-normal block mt-0.5">Steam extraction & upholstery restorations.</span>
+              </div>
+            </label>
+
+          </div>
+
+          <div class="border-t border-slate-200 dark:border-slate-700 pt-6">
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Cleaning Frequency</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
+                <input type="radio" name="frequency" value="one-time" class="sr-only">
+                <span class="text-xs font-bold text-slate-900 dark:text-white">One-Time</span>
+              </label>
+              <label class="border-2 border-primary dark:border-secondary rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
+                <input type="radio" name="frequency" value="weekly" checked class="sr-only">
+                <span class="text-xs font-bold text-slate-900 dark:text-white">Weekly</span>
+                <span class="text-[9px] text-emerald-500 font-bold block">Save 20%</span>
+              </label>
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
+                <input type="radio" name="frequency" value="bi-weekly" class="sr-only">
+                <span class="text-xs font-bold text-slate-900 dark:text-white">Bi-Weekly</span>
+                <span class="text-[9px] text-emerald-500 font-bold block">Save 15%</span>
+              </label>
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
+                <input type="radio" name="frequency" value="monthly" class="sr-only">
+                <span class="text-xs font-bold text-slate-900 dark:text-white">Monthly</span>
+                <span class="text-[9px] text-emerald-500 font-bold block">Save 10%</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="flex justify-end pt-4">
+            <button type="button" class="booking-next-btn bg-primary hover:bg-primary-light text-white font-bold px-6 py-3 rounded-xl shadow transition-all flex items-center space-x-1.5">
+              <span>Next Step</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 2: Choose Date & Time slot -->
+        <div class="booking-step-content hidden space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Select Date & Time</h3>
+            <p class="text-xs text-slate-500 mt-0.5">When should our certified cleaners arrive?</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-2">Preferred Date</label>
+              <input type="date" id="booking-date" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+              <p class="text-xs text-red-500 mt-1 hidden error-msg" id="error-date">Please pick a scheduled date</p>
+            </div>
+            
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-2">Arrival Time Slot</label>
+              <div class="grid grid-cols-2 gap-2" id="time-slots-container">
+                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 block">
+                  <input type="radio" name="time-slot" value="morning" class="sr-only">
+                  <span class="text-xs font-semibold block text-slate-800 dark:text-slate-200">08:00 AM (Morning)</span>
+                </label>
+                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 block">
+                  <input type="radio" name="time-slot" value="midday" class="sr-only">
+                  <span class="text-xs font-semibold block text-slate-800 dark:text-slate-200">12:00 PM (Midday)</span>
+                </label>
+                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 block">
+                  <input type="radio" name="time-slot" value="afternoon" class="sr-only">
+                  <span class="text-xs font-semibold block text-slate-800 dark:text-slate-200">03:00 PM (Afternoon)</span>
+                </label>
+                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 block">
+                  <input type="radio" name="time-slot" value="overnight" class="sr-only">
+                  <span class="text-xs font-semibold block text-slate-800 dark:text-slate-200">07:00 PM (Night)</span>
+                </label>
+              </div>
+              <p class="text-xs text-red-500 mt-1 hidden error-msg" id="error-time">Please select an arrival time slot</p>
+            </div>
+          </div>
+
+          <div class="flex justify-between pt-4">
+            <button type="button" class="booking-prev-btn border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-bold px-6 py-3 rounded-xl flex items-center space-x-1.5">
+              <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              <span>Back</span>
+            </button>
+            <button type="button" class="booking-next-btn bg-primary hover:bg-primary-light text-white font-bold px-6 py-3 rounded-xl shadow transition-all flex items-center space-x-1.5">
+              <span>Next Step</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3: Office Size & details -->
+        <div class="booking-step-content hidden space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Office Size & Layout</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Let us know about the scale of your workspaces.</p>
+          </div>
+
+          <div class="space-y-4">
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase">Approximate Total Office Dimensions</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="border border-slate-200 dark:border-slate-750 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750">
+                <input type="radio" name="office-size" value="small" checked class="w-4 h-4 mt-1 text-primary focus:ring-primary accent-primary dark:accent-secondary">
+                <div>
+                  <span class="font-bold text-slate-800 dark:text-white block text-sm">Under 1,000 sq ft</span>
+                  <span class="text-xs text-slate-500 mt-0.5">Boutique office / single floor suites.</span>
+                </div>
+              </label>
+
+              <label class="border border-slate-200 dark:border-slate-755 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750">
+                <input type="radio" name="office-size" value="medium" class="w-4 h-4 mt-1 text-primary focus:ring-primary accent-primary dark:accent-secondary">
+                <div>
+                  <span class="font-bold text-slate-800 dark:text-white block text-sm">1,000 - 3,000 sq ft</span>
+                  <span class="text-xs text-slate-500 mt-0.5">Standard business suites / open offices.</span>
+                </div>
+              </label>
+            </div>
+            <p class="text-xs text-red-500 mt-1 hidden error-msg" id="error-size">Please specify your dimensions</p>
+          </div>
+
+          <div class="border-t border-slate-200 dark:border-slate-700 pt-6 space-y-4">
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">Select Optional Add-ons</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 flex items-center space-x-2.5 cursor-pointer">
+                <input type="checkbox" name="addons" value="carpet-shampoo" class="w-4 h-4 text-primary rounded accent-primary dark:accent-secondary">
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">Carpet Steam Shampoo (+$60)</span>
+              </label>
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 flex items-center space-x-2.5 cursor-pointer">
+                <input type="checkbox" name="addons" value="window-exterior" class="w-4 h-4 text-primary rounded accent-primary dark:accent-secondary">
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">Exterior Glass Wash (+$50)</span>
+              </label>
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 flex items-center space-x-2.5 cursor-pointer">
+                <input type="checkbox" name="addons" value="refrigerator-clean" class="w-4 h-4 text-primary rounded accent-primary dark:accent-secondary">
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">Kitchen Deep Clean (+$30)</span>
+              </label>
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 flex items-center space-x-2.5 cursor-pointer">
+                <input type="checkbox" name="addons" value="disinfection-mist" class="w-4 h-4 text-primary rounded accent-primary dark:accent-secondary">
+                <span class="text-xs font-semibold text-slate-800 dark:text-slate-200">Electrostatic Disinfect Mist (+$45)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="flex justify-between pt-4">
+            <button type="button" class="booking-prev-btn border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-bold px-6 py-3 rounded-xl flex items-center space-x-1.5">
+              <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              <span>Back</span>
+            </button>
+            <button type="button" class="booking-next-btn bg-primary hover:bg-primary-light text-white font-bold px-6 py-3 rounded-xl shadow transition-all flex items-center space-x-1.5">
+              <span>Next Step</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 4: Contact & Billing -->
+        <div class="booking-step-content hidden space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Contact & Billing Info</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Please provide company details for invoice references.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Contact Full Name</label>
+              <input type="text" id="book-name" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+              <p class="text-[10px] text-red-500 mt-1 hidden error-msg" id="error-book-name">Name is required</p>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-355 uppercase mb-1.5">Company / Org Name</label>
+              <input type="text" id="book-company" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Corporate Email</label>
+              <input type="email" id="book-email" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+              <p class="text-[10px] text-red-500 mt-1 hidden error-msg" id="error-book-email">Valid email is required</p>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-355 uppercase mb-1.5">Phone Number</label>
+              <input type="tel" id="book-phone" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+              <p class="text-[10px] text-red-500 mt-1 hidden error-msg" id="error-book-phone">Phone number is required</p>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Office Address</label>
+            <input type="text" id="book-address" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+            <p class="text-[10px] text-red-500 mt-1 hidden error-msg" id="error-book-address">Address is required</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Special Instructions (Access codes, keys, etc.)</label>
+            <textarea id="book-notes" rows="3" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+          </div>
+
+          <div class="flex justify-between pt-4">
+            <button type="button" class="booking-prev-btn border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-bold px-6 py-3 rounded-xl flex items-center space-x-1.5">
+              <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              <span>Back</span>
+            </button>
+            <button type="button" class="booking-next-btn bg-primary hover:bg-primary-light text-white font-bold px-6 py-3 rounded-xl shadow transition-all flex items-center space-x-1.5">
+              <span>Next Step</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 5: Price Summary & Confirmation -->
+        <div class="booking-step-content hidden space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Verify Booking Details</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Please review your inputs before submitting this proposal.</p>
+          </div>
+
+          <!-- Summarized Data Card injected here -->
+          <div id="booking-summary-container" class="space-y-4">
+            <!-- Dynamic markup from booking.js -->
+          </div>
+
+          <div class="flex justify-between pt-4">
+            <button type="button" class="booking-prev-btn border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-bold px-6 py-3 rounded-xl flex items-center space-x-1.5">
+              <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              <span>Back</span>
+            </button>
+            <button type="submit" id="booking-submit-btn" class="bg-secondary hover:bg-secondary-light text-slate-900 font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all flex items-center space-x-1.5">
+              <span>Confirm & Submit</span>
+              <i data-lucide="check" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Sidebar Cost Estimator Box -->
+      <aside class="lg:col-span-4 bg-white dark:bg-slate-800 p-6 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-md sticky top-36" id="price-summary-box">
+        <!-- Renders dynamically from booking.js -->
+      </aside>
+
+    </div>
+
+  </section>
+
+  <!-- Minimal Footer Strip -->
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-primary dark:bg-secondary text-white dark:text-slate-900 p-3.5 rounded-full shadow-lg opacity-0 pointer-events-none hover:scale-110 active:scale-95 transition-all duration-300">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z' fill='currentColor' /><path d='M35 65V35H55V45H65V65H35Z' fill='%23E8F4FF' opacity='0.85' /><path d='M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z' fill='%230F4C81' /><path d='M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z' fill='%2300A86B' /><path d='M30 65H70L65 70H35L30 65Z' fill='%2300A86B' /><rect x='47' y='70' width='6' height='12' rx='2' fill='%2300A86B' /></svg>">
+  <title>Coming Soon - CleanPro Client Portal</title>
+  <meta name="description" content="Our new real-time auditing client dashboard is launching soon. Submit your email to be notified instantly on release day.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0F4C81',
+              light: '#24659D',
+              dark: '#0A3357',
+            },
+            secondary: {
+              DEFAULT: '#00A86B',
+              light: '#00C37C',
+              dark: '#008E5A',
+            },
+            accent: '#E8F4FF',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 min-h-screen transition-colors duration-300 flex flex-col items-center justify-center pt-28 pb-12 px-4 relative">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse" id="nav-logo-link">
+          <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+            <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
+            <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+            <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+          </svg>
+          <span class="text-xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+        </a>
+
+        <!-- Controls -->
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          <a href="index.html" class="hidden sm:inline-flex items-center space-x-1 text-sm font-semibold text-slate-500 hover:text-primary dark:hover:text-secondary mr-2 transition-colors">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span>Back to Site</span>
+          </a>
+          <!-- Direction Toggle -->
+          <button class="dir-toggle-btn flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold" title="Toggle Layout Direction">
+            <span class="dir-toggle-text">LTR</span>
+            <i data-lucide="languages" class="w-4 h-4"></i>
+          </button>
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
+            <i class="theme-toggle-icon w-5 h-5" data-lucide="moon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main card content -->
+  <div class="max-w-2xl w-full bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-8 sm:p-12 rounded-3xl shadow-xl text-center space-y-8 relative overflow-hidden">
+    
+    <!-- Sparkle background circles -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl"></div>
+      <div class="absolute -bottom-12 -right-12 w-48 h-48 bg-secondary/5 rounded-full blur-2xl"></div>
+    </div>
+
+    <!-- Header Brand logo -->
+    <div class="relative z-10 space-y-3">
+      <div class="flex justify-center">
+        <a href="index.html" class="flex items-center space-x-2">
+          <svg class="h-9 w-9 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+            <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" />
+            <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+            <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+          </svg>
+          <span class="text-xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+        </a>
+      </div>
+      <h2 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white">Our Portal is Launching Soon</h2>
+      <p class="text-sm text-slate-500 max-w-md mx-auto">We are launching our automated scheduling & QA verification portal. Get ready to control your facility cleanings online.</p>
+    </div>
+
+    <!-- Countdown Timer Widgets -->
+    <div class="grid grid-cols-4 gap-3 max-w-md mx-auto relative z-10 text-slate-800 dark:text-white" id="countdown-wrapper">
+      
+      <!-- Days -->
+      <div class="bg-slate-50 dark:bg-slate-900 p-3 sm:p-4 rounded-2xl border border-slate-100 dark:border-slate-850 shadow-inner">
+        <span class="text-2xl sm:text-3xl font-black text-primary dark:text-secondary block" id="cd-days">30</span>
+        <span class="text-[9px] uppercase font-bold text-slate-400 block mt-1">Days</span>
+      </div>
+
+      <!-- Hours -->
+      <div class="bg-slate-50 dark:bg-slate-900 p-3 sm:p-4 rounded-2xl border border-slate-100 dark:border-slate-850 shadow-inner">
+        <span class="text-2xl sm:text-3xl font-black text-primary dark:text-secondary block" id="cd-hours">12</span>
+        <span class="text-[9px] uppercase font-bold text-slate-400 block mt-1">Hours</span>
+      </div>
+
+      <!-- Minutes -->
+      <div class="bg-slate-50 dark:bg-slate-900 p-3 sm:p-4 rounded-2xl border border-slate-100 dark:border-slate-850 shadow-inner">
+        <span class="text-2xl sm:text-3xl font-black text-primary dark:text-secondary block" id="cd-minutes">45</span>
+        <span class="text-[9px] uppercase font-bold text-slate-400 block mt-1">Mins</span>
+      </div>
+
+      <!-- Seconds -->
+      <div class="bg-slate-50 dark:bg-slate-900 p-3 sm:p-4 rounded-2xl border border-slate-100 dark:border-slate-850 shadow-inner">
+        <span class="text-2xl sm:text-3xl font-black text-primary dark:text-secondary block" id="cd-seconds">59</span>
+        <span class="text-[9px] uppercase font-bold text-slate-400 block mt-1">Secs</span>
+      </div>
+
+    </div>
+
+    <!-- Newsletter SignUp form -->
+    <div class="max-w-md mx-auto space-y-4 relative z-10">
+      <form class="flex flex-col sm:flex-row gap-2" id="coming-soon-form">
+        <input type="email" id="cs-email" placeholder="Enter corporate email" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary placeholder-slate-400" required>
+        <button type="submit" class="bg-primary hover:bg-primary-light dark:bg-secondary dark:text-slate-900 dark:hover:bg-secondary-light text-white font-bold py-3 px-6 rounded-xl text-sm whitespace-nowrap shadow-md transition-all">
+          Notify Me
+        </button>
+      </form>
+      <!-- Feedback box -->
+      <div id="cs-feedback" class="hidden text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+        Email registered successfully! We will contact you on release day.
+      </div>
+    </div>
+
+    <!-- Social Links and Back to site -->
+    <div class="pt-6 border-t border-slate-100 dark:border-slate-700 flex flex-col items-center gap-4 relative z-10">
+      <div class="flex space-x-3 rtl:space-x-reverse text-slate-400">
+        <a href="#" class="p-2.5 bg-slate-50 dark:bg-slate-900 rounded-xl hover:bg-primary hover:text-white transition-colors" title="Facebook"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+        <a href="#" class="p-2.5 bg-slate-50 dark:bg-slate-900 rounded-xl hover:bg-primary hover:text-white transition-colors" title="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+        <a href="#" class="p-2.5 bg-slate-50 dark:bg-slate-900 rounded-xl hover:bg-primary hover:text-white transition-colors" title="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+        <a href="#" class="p-2.5 bg-slate-50 dark:bg-slate-900 rounded-xl hover:bg-primary hover:text-white transition-colors" title="Twitter/X"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+      </div>
+      <a href="index.html" class="text-xs text-slate-400 hover:text-slate-650 hover:underline">Return to Corporate Site</a>
+    </div>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Live ticking countdown timer
+    // Set launch date to 30 days from now
+    const launchDate = new Date();
+    launchDate.setDate(launchDate.getDate() + 30);
+
+    const updateTimer = () => {
+      const now = new Date();
+      const diff = launchDate - now;
+
+      if (diff <= 0) {
+        clearInterval(timerInterval);
+        document.getElementById('countdown-wrapper').innerHTML = '<span class="col-span-4 text-emerald-500 font-bold text-lg">We are Live!</span>';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('cd-days').textContent = days;
+      document.getElementById('cd-hours').textContent = hours.toString().padStart(2, '0');
+      document.getElementById('cd-minutes').textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('cd-seconds').textContent = seconds.toString().padStart(2, '0');
+    };
+
+    const timerInterval = setInterval(updateTimer, 1000);
+    updateTimer();
+
+    // Coming soon form storage
+    const form = document.getElementById('coming-soon-form');
+    const feedback = document.getElementById('cs-feedback');
+    const email = document.getElementById('cs-email');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      localStorage.setItem('coming_soon_notification_email', email.value);
+      feedback.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => {
+        feedback.classList.add('hidden');
+      }, 5000);
+    });
+  </script>
+</body>
+</html>

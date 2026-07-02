@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z' fill='currentColor' /><path d='M35 65V35H55V45H65V65H35Z' fill='%23E8F4FF' opacity='0.85' /><path d='M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z' fill='%230F4C81' /><path d='M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z' fill='%2300A86B' /><path d='M30 65H70L65 70H35L30 65Z' fill='%2300A86B' /><rect x='47' y='70' width='6' height='12' rx='2' fill='%2300A86B' /></svg>">
+  <title>Register - CleanPro Corporate Account</title>
+  <meta name="description" content="Register a corporate account with CleanPro to manage commercial cleanings, track supervisor reports, and set custom schedules.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#0F4C81', light: '#24659D', dark: '#0A3357' },
+            secondary: { DEFAULT: '#00A86B', light: '#00C37C', dark: '#008E5A' },
+            accent: '#E8F4FF',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 min-h-screen transition-colors duration-300 flex flex-col items-center justify-center pt-28 pb-12 px-4 relative">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse" id="nav-logo-link">
+          <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+            <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
+            <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+            <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+          </svg>
+          <span class="text-xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+        </a>
+
+        <!-- Controls -->
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          
+          <button class="dir-toggle-btn flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold" title="Toggle Layout Direction">
+            <span class="dir-toggle-text">LTR</span>
+            <i data-lucide="languages" class="w-4 h-4"></i>
+          </button>
+          <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
+            <i class="theme-toggle-icon w-5 h-5" data-lucide="moon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Register Card -->
+  <div class="w-full max-w-xl bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-xl p-8 space-y-5 animate-fade-in">
+    
+    <div class="text-center space-y-1">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Create Corporate Account</h2>
+      <p class="text-xs text-slate-500 dark:text-slate-400">Manage workspace sanitation checklists and schedules</p>
+    </div>
+
+    <!-- Social Auth Buttons -->
+    <div class="space-y-3">
+      <!-- Google -->
+      <button class="w-full flex items-center justify-center space-x-3 py-3 px-4 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 text-sm font-semibold transition-all">
+        <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l3.66-2.85z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.85c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        <span class="text-slate-700 dark:text-slate-200">Register with Google Workspace</span>
+      </button>
+
+      <!-- Apple -->
+    <button class="w-full flex items-center justify-center space-x-3 py-3 px-4 bg-slate-900 dark:bg-white border border-slate-900 dark:border-white rounded-xl hover:bg-slate-800 dark:hover:bg-slate-100 text-sm font-semibold transition-all">
+  <!-- Removed duplicate class attribute and fixed the class assignment -->
+  <svg class="w-5 h-5 flex-shrink-0 text-white dark:text-slate-900" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+  </svg>
+  <span class="text-white dark:text-slate-900">Continue with Apple</span>
+</button>
+
+      <!-- Facebook -->
+      <button class="w-full flex items-center justify-center space-x-3 py-3 px-4 bg-[#1877F2] border border-[#1877F2] rounded-xl hover:bg-[#166FE5] text-sm font-semibold transition-all">
+        <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="white">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+        <span class="text-white">Register with Facebook</span>
+      </button>
+    </div>
+
+    <!-- Divider -->
+    <div class="flex items-center gap-3 text-xs text-slate-400 dark:text-slate-500 uppercase tracking-widest">
+      <div class="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
+      <span>or register with email</span>
+      <div class="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
+    </div>
+
+    <!-- Registration Form -->
+    <form class="space-y-4" id="signup-form">
+      
+      <!-- Full Name / Company -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1.5">Full Name</label>
+          <input type="text" id="sign-name" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1.5">Company Name</label>
+          <input type="text" id="sign-company" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+        </div>
+      </div>
+
+      <!-- Email / Phone -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1.5">Work Email</label>
+          <input type="email" id="sign-email" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1.5">Corporate Phone</label>
+          <input type="tel" id="sign-phone" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+        </div>
+      </div>
+
+      <!-- Password / Confirm -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1.5">Password</label>
+          <input type="password" id="sign-pass" placeholder="••••••••" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1.5">Confirm Password</label>
+          <input type="password" id="sign-confirm" placeholder="••••••••" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+        </div>
+      </div>
+
+      <!-- Consent -->
+      <div class="flex items-start space-x-2.5 rtl:space-x-reverse text-sm">
+        <input type="checkbox" id="sign-agree" class="w-4 h-4 text-primary border-slate-300 rounded focus:ring-primary mt-0.5 accent-primary dark:accent-secondary" required>
+        <label for="sign-agree" class="text-slate-600 dark:text-slate-400 cursor-pointer">
+          I certify that I am authorized to register this facility and I agree to the CleanPro <a href="#" class="text-primary dark:text-secondary hover:underline">Terms of Service</a> &amp; <a href="#" class="text-primary dark:text-secondary hover:underline">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <div class="hidden text-xs text-red-500 font-bold" id="signup-error-box"></div>
+
+      <button type="submit" class="w-full bg-primary hover:bg-primary-light dark:bg-secondary dark:text-slate-900 dark:hover:bg-secondary-light text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-md mt-2">
+        Register Corporate Account
+      </button>
+
+    </form>
+
+    <div class="text-center pt-4 border-t border-slate-100 dark:border-slate-700">
+      <p class="text-sm text-slate-500 dark:text-slate-400">
+        Already have a corporate account? 
+        <a href="login.html" class="font-bold text-primary dark:text-secondary hover:underline">Sign in here</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Footer Social Icons -->
+  <div class="mt-8 text-center text-xs text-slate-400 dark:text-slate-500 space-y-4">
+    <!-- <div class="flex justify-center space-x-3 rtl:space-x-reverse">
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="Facebook"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="Twitter"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="YouTube"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+    </div> -->
+    <p>&copy; 2026 CleanPro Facility Management. All rights reserved.</p>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const form = document.getElementById('signup-form');
+    const password = document.getElementById('sign-pass');
+    const confirm = document.getElementById('sign-confirm');
+    const errorBox = document.getElementById('signup-error-box');
+
+    form.addEventListener('submit', (e) => {
+      errorBox.classList.add('hidden');
+      errorBox.textContent = '';
+      if (password.value !== confirm.value) {
+        e.preventDefault();
+        errorBox.classList.remove('hidden');
+        errorBox.textContent = 'Passwords do not match. Please verify.';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z' fill='currentColor' /><path d='M35 65V35H55V45H65V65H35Z' fill='%23E8F4FF' opacity='0.85' /><path d='M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z' fill='%230F4C81' /><path d='M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z' fill='%2300A86B' /><path d='M30 65H70L65 70H35L30 65Z' fill='%2300A86B' /><rect x='47' y='70' width='6' height='12' rx='2' fill='%2300A86B' /></svg>">
+  <title>Pricing Plans - CleanPro Facility Management</title>
+  <meta name="description" content="View our flat rate commercial cleaning packages or use our interactive workspace estimator to calculate your custom cleaning contract costs.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0F4C81',
+              light: '#24659D',
+              dark: '#0A3357',
+            },
+            secondary: {
+              DEFAULT: '#00A86B',
+              light: '#00C37C',
+              dark: '#008E5A',
+            },
+            accent: '#E8F4FF',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 min-h-screen transition-colors duration-300 pt-20">
+
+  <!-- Header -->
+ <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between h-20">
+    
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center space-x-2 shrink-0" id="nav-logo-link">
+      <!-- SVG Code Remains Same -->
+        <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+            <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
+            <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+            <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+          </svg>
+      <span class="text-lg md:text-xl font-bold tracking-tight text-primary dark:text-white">
+        CleanPro <span class="text-secondary font-medium">Facility</span>
+      </span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <!-- Changed space-x-6 to space-x-4 for tighter fit at 1024px -->
+    <nav class="hidden lg:flex space-x-4 xl:space-x-8 items-center">
+      <a href="index.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Home</a>
+      <a href="home2.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Home 2</a>
+      <a href="aboutus.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">About Us</a>
+      <a href="services.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Services</a>
+      <a href="gallery.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Gallery</a>
+      <a href="pricing.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Pricing</a>
+      <a href="contact.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Contact</a>
+    </nav>
+
+    <!-- Navbar Controls -->
+    <!-- Added shrink-0 to prevent these buttons from squishing -->
+    <div class="hidden lg:flex items-center space-x-3 shrink-0">
+      <button class="dir-toggle-btn flex items-center space-x-1 px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold">
+        <span class="dir-toggle-text">LTR</span>
+        <i data-lucide="languages" class="w-3 h-3"></i>
+      </button>
+      
+      <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
+        <i class="theme-toggle-icon w-4 h-4" data-lucide="moon"></i>
+      </button>
+
+      <a href="login.html" class="text-xs font-semibold text-slate-700">Login</a>
+      <a href="booknow.html" class="bg-primary text-white font-bold text-xs px-4 py-2 rounded-xl shadow-lg">Book Now</a>
+    </div>
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="flex items-center lg:hidden space-x-2">
+      <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200"><i class="w-5 h-5" data-lucide="moon"></i></button>
+      <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 animate-slide-in">
+      <div class="px-2 pt-2 pb-4 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Home</a>
+        <a href="home2.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Home 2</a>
+        <a href="aboutus.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">About Us</a>
+        <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Services</a>
+        <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Gallery</a>
+        <a href="pricing.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Pricing</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Contact</a>
+        <div class="border-t border-slate-200 dark:border-slate-700 my-2 pt-2 flex flex-col space-y-2 px-3">
+          <!-- Mobile LTR Toggle -->
+          <button class="dir-toggle-btn w-full flex items-center justify-between px-3 py-2 rounded-md border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-semibold">
+            <span>Layout Direction</span>
+            <span class="flex items-center space-x-1"><span class="dir-toggle-text">LTR</span><i data-lucide="languages" class="w-4 h-4"></i></span>
+          </button>
+          <a href="login.html" class="block text-center py-2 text-base font-semibold text-slate-700 dark:text-slate-200">Login</a>
+          <a href="booknow.html" class="block text-center bg-primary dark:bg-secondary text-white font-bold py-2.5 rounded-lg">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero - 2 Column Grid -->
+  <section class="bg-gradient-to-br from-primary via-primary-dark to-slate-900 py-16 lg:py-24 border-b border-slate-100 dark:border-slate-800 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span class="inline-block text-xs font-extrabold text-secondary uppercase tracking-widest bg-secondary/20 px-3 py-1.5 rounded-full">Transparent Pricing</span>
+          <h1 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">Commercial Cleaning Plans for Every Scale</h1>
+          <p class="text-lg text-slate-300 w-full max-w-prose">Choose from our flat-rate monthly contracts or use our interactive workspace estimator to calculate a custom cleaning plan that perfectly fits your team's budget and schedule.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="booknow.html" class="bg-secondary hover:bg-secondary-light text-slate-900 font-bold px-6 py-3 rounded-xl shadow-lg transition-all">Start a Quote</a>
+            <a href="contact.html" class="border border-white/30 text-white font-bold px-6 py-3 rounded-xl hover:bg-white/10 transition-all">Talk to Sales</a>
+          </div>
+          <div class="flex flex-wrap gap-6 pt-2">
+            <div><span class="text-3xl font-extrabold text-secondary">3</span><p class="text-xs text-slate-400 font-semibold mt-0.5">Flexible Plans</p></div>
+            <div><span class="text-3xl font-extrabold text-secondary">20%</span><p class="text-xs text-slate-400 font-semibold mt-0.5">Annual Savings</p></div>
+            <div><span class="text-3xl font-extrabold text-secondary">No</span><p class="text-xs text-slate-400 font-semibold mt-0.5">Hidden Fees</p></div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img src="assets/pricinghero" alt="Pricing Plans" class="w-full h-80 lg:h-[440px] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+          </div>
+          <div class="absolute -bottom-5 -right-5 bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-xl border border-slate-100 dark:border-slate-700">
+            <div class="flex items-center space-x-3">
+              <span class="p-2.5 bg-secondary/10 rounded-xl"><i data-lucide="tag" class="w-6 h-6 text-secondary"></i></span>
+              <div><p class="font-bold text-slate-900 dark:text-white text-sm">No Lock-in Contracts</p><p class="text-xs text-slate-500">Cancel anytime with 30 days notice</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toggle Switch -->
+  <section class="py-12 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center space-y-4">
+      <div class="bg-slate-100 dark:bg-slate-800 p-1 rounded-xl flex items-center space-x-1 rtl:space-x-reverse shadow-inner">
+        <button id="toggle-monthly" class="px-4 py-2 rounded-lg text-sm font-bold bg-white text-slate-800 dark:bg-slate-700 dark:text-white shadow">Monthly Billing</button>
+        <button id="toggle-annual" class="px-4 py-2 rounded-lg text-sm font-bold text-slate-500 hover:text-slate-800 dark:hover:text-white flex items-center space-x-1">
+          <span>Annual Billing</span>
+          <span class="bg-emerald-500 text-slate-900 text-[10px] font-extrabold px-1.5 py-0.5 rounded-md">Save 20%</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Plan Grid -->
+  <section class="pb-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Basic Plan -->
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-750 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Basic Maintenance</h3>
+              <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">Bi-weekly basic dusting & floor sweeping shifts.</p>
+            </div>
+            <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
+              <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$<span class="plan-price" data-monthly="399" data-annual="319">399</span></span>
+              <span class="text-slate-500 text-xs">/month</span>
+            </div>
+            <ul class="space-y-3.5 text-sm text-slate-600 dark:text-slate-400">
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Bi-weekly sanitation sweeps</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Workstation surface dusting</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Trash & recycle collections</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Restroom sanitizing shifts</span></li>
+              <li class="text-slate-350 line-through flex items-center space-x-2"><i data-lucide="x" class="text-slate-300 w-4 h-4"></i><span>Carpet hot steam extraction</span></li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="booknow.html" class="block text-center bg-primary hover:bg-primary-light text-white font-bold py-3.5 rounded-2xl transition-all">Book Plan Now</a>
+          </div>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 border-2 border-primary dark:border-secondary shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between relative group">
+          <div class="absolute top-0 right-0 bg-primary dark:bg-secondary text-white dark:text-slate-900 text-xs font-bold px-4 py-1.5 rounded-bl-2xl">POPULAR PLAN</div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Commercial Pro</h3>
+              <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">Daily cleaning for standard growing corporate offices.</p>
+            </div>
+            <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
+              <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$<span class="plan-price" data-monthly="799" data-annual="639">799</span></span>
+              <span class="text-slate-500 text-xs">/month</span>
+            </div>
+            <ul class="space-y-3.5 text-sm text-slate-600 dark:text-slate-400">
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Daily sweep & sanitizing shifts</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Weekly carpet extraction cleaning</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Common area lobby polishing</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Interior window detailing</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Weekly supervisor QA checklists</span></li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="booknow.html" class="block text-center bg-primary hover:bg-secondary hover:text-white dark:bg-secondary dark:text-slate-900 dark:hover:bg-secondary-light font-bold py-3.5 rounded-2xl transition-all">Book Plan Now</a>
+          </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-750 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Premium Executive</h3>
+              <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">24/7 dedicated porter cover for multistory headquarters.</p>
+            </div>
+            <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
+              <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$<span class="plan-price" data-monthly="1499" data-annual="1199">1,499</span></span>
+              <span class="text-slate-500 text-xs">/month</span>
+            </div>
+            <ul class="space-y-3.5 text-sm text-slate-600 dark:text-slate-400">
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>24/7 dedicated porter on site</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>HVAC filter scheduling & audits</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Quarterly floor wax restoration</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>All-inclusive exterior window sweeps</span></li>
+              <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Emergency 24/7 priority response</span></li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <a href="booknow.html" class="block text-center bg-primary hover:bg-primary-light text-white font-bold py-3.5 rounded-2xl transition-all">Book Plan Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cost Estimator Slider -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-900/50 border-t border-b border-slate-100 dark:border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12 space-y-4">
+        <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Custom Estimates</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Workspace Cost Estimator</h2>
+        <p class="text-slate-600 dark:text-slate-400">Adjust the dimensions and frequency below to calculate a custom operations estimate instantly.</p>
+      </div>
+
+      <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-md grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Controls -->
+        <div class="space-y-6">
+          <div>
+            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Office Size (Square Feet)</label>
+            <input type="range" id="estimator-sqft" min="500" max="10000" step="500" value="2500" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary dark:accent-secondary">
+            <div class="flex justify-between text-xs text-slate-500 mt-2">
+              <span>500 sq ft</span>
+              <span class="font-bold text-primary dark:text-secondary" id="estimator-sqft-val">2,500 sq ft</span>
+              <span>10,000 sq ft</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Cleaning Frequency</label>
+            <select id="estimator-frequency" class="w-full bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+              <option value="one-time">One-Time Clean</option>
+              <option value="weekly" selected>Weekly Service (15% Disc.)</option>
+              <option value="bi-weekly">Bi-Weekly Service (10% Disc.)</option>
+              <option value="daily">Daily Service (25% Disc.)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Output -->
+        <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl flex flex-col justify-between items-center text-center">
+          <div class="space-y-2">
+            <h4 class="font-bold text-slate-800 dark:text-white uppercase tracking-wider text-sm">Estimated Clean Rate</h4>
+            <p class="text-xs text-slate-500">Based on standard business dimensions</p>
+          </div>
+          <div>
+            <span class="text-4xl sm:text-5xl font-black text-primary dark:text-secondary" id="estimator-result">$180.00</span>
+            <span class="text-slate-500 text-xs block mt-1" id="estimator-subtext">per weekly clean</span>
+          </div>
+          <a href="booknow.html" class="w-full bg-primary hover:bg-primary-light dark:bg-secondary dark:text-slate-900 dark:hover:bg-secondary-light text-white font-bold py-3.5 rounded-xl transition-all shadow-md mt-4">
+            Book Estimations
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Feature Comparison Matrix -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-4">
+        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Feature Comparison Table</h2>
+        <p class="text-slate-600 dark:text-slate-400">Review exactly what services are included in each subscription level.</p>
+      </div>
+
+      <div class="overflow-x-auto rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm">
+        <table class="w-full text-left rtl:text-right text-sm">
+          <thead class="bg-slate-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200">
+            <tr>
+              <th class="p-4 font-bold">Hygiene Features</th>
+              <th class="p-4 font-bold">Basic</th>
+              <th class="p-4 font-bold">Standard</th>
+              <th class="p-4 font-bold">Premium</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-600 dark:text-slate-450 bg-white dark:bg-slate-900">
+            <tr>
+              <td class="p-4 font-medium text-slate-900 dark:text-white">Dusting Workstations</td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-900 dark:text-white">Restroom Disinfections</td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-900 dark:text-white">Trash Sort & Collection</td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-900 dark:text-white">Carpet HEPA Extraction</td>
+              <td class="p-4 text-slate-300">—</td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-900 dark:text-white">Weekly Glass Detailing</td>
+              <td class="p-4 text-slate-300">—</td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-900 dark:text-white">24/7 Dedicated Porter Cover</td>
+              <td class="p-4 text-slate-300">—</td>
+              <td class="p-4 text-slate-300">—</td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium text-slate-900 dark:text-white">Facility Audit Logs (ISO)</td>
+              <td class="p-4 text-slate-300">—</td>
+              <td class="p-4 text-slate-300">—</td>
+              <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Save More on Premium Corporate Cleanings</h2>
+      <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto min-h-[48px] w-full">
+        Select a contract package or contact our coordinator to construct a custom facility sanitization budget. Get 20% off when billed annually.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="booknow.html" class="w-full sm:w-auto text-center bg-primary hover:bg-primary-light dark:bg-secondary dark:hover:bg-secondary-light text-white dark:text-slate-900 font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all">Book Subscriptions</a>
+        <a href="contact.html" class="w-full sm:w-auto text-center bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 font-bold px-8 py-3.5 rounded-xl transition-all">Contact Sales Staff</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-slate-800">
+        
+        <!-- Logo and Brand -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
+            <svg class="h-8 w-8 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+              <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+              <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" />
+              <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+              <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+            </svg>
+            <span class="text-lg font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+          </a>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
+          </p>
+         <div class="flex space-x-3 rtl:space-x-reverse">
+  <!-- Facebook -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-[#1877F2] text-white transition-colors" title="Facebook">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+  </a>
+  <!-- Instagram -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-[#E1306C] text-white transition-colors" title="Instagram">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+  </a>
+  <!-- LinkedIn -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-[#0A66C2] text-white transition-colors" title="LinkedIn">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+  </a>
+  <!-- X (Twitter) -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-black text-white transition-colors" title="Twitter/X">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  </a>
+  <!-- YouTube -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-[#FF0000] text-white transition-colors" title="YouTube">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+  </a>
+</div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
+            <li><a href="aboutus.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+          </ul>
+        </div>
+
+        <!-- Extra Pages -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Utility</h4>
+          <ul class="space-y-2 text-sm">
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="booknow.html" class="hover:text-white transition-colors">Book Now</a></li>
+            <li><a href="comingsoon.html" class="hover:text-white transition-colors">Coming Soon</a></li>
+            <li><a href="404.html" class="hover:text-white transition-colors">404 Error</a></li>
+            <li><a href="login.html" class="hover:text-white transition-colors">Login</a></li>
+            <li><a href="signup.html" class="hover:text-white transition-colors">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Area -->
+        <div class="lg:col-span-4 space-y-4">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Newsletter</h4>
+          <p class="text-sm text-slate-400">Subscribe to receive facilities management insights and seasonal promotions.</p>
+          <form class="space-y-2" id="footer-newsletter">
+            <div class="relative">
+              <input type="email" placeholder="Your corporate email" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary placeholder-slate-500" required>
+            </div>
+            <button type="submit" class="w-full bg-primary hover:bg-primary-light text-white font-bold py-3 px-4 rounded-xl text-sm transition-all shadow-md">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright Area -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <span>&copy; 2026 CleanPro Facility Management. All rights reserved.</span>
+        <div class="flex space-x-4 rtl:space-x-reverse">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+          <a href="#" class="hover:text-white">Cookie Settings</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-primary dark:bg-secondary text-white dark:text-slate-900 p-3.5 rounded-full shadow-lg opacity-0 pointer-events-none hover:scale-110 active:scale-95 transition-all duration-300">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Live Annual/Monthly Toggle code
+    const monthlyBtn = document.getElementById('toggle-monthly');
+    const annualBtn = document.getElementById('toggle-annual');
+    const priceEls = document.querySelectorAll('.plan-price');
+
+    monthlyBtn.addEventListener('click', () => {
+      monthlyBtn.classList.add('bg-white', 'text-slate-800', 'dark:bg-slate-700', 'dark:text-white', 'shadow');
+      monthlyBtn.classList.remove('text-slate-500');
+      annualBtn.classList.remove('bg-white', 'text-slate-800', 'dark:bg-slate-700', 'dark:text-white', 'shadow');
+      annualBtn.classList.add('text-slate-500');
+
+      priceEls.forEach(el => {
+        el.textContent = el.getAttribute('data-monthly');
+      });
+    });
+
+    annualBtn.addEventListener('click', () => {
+      annualBtn.classList.add('bg-white', 'text-slate-800', 'dark:bg-slate-700', 'dark:text-white', 'shadow');
+      annualBtn.classList.remove('text-slate-500');
+      monthlyBtn.classList.remove('bg-white', 'text-slate-800', 'dark:bg-slate-700', 'dark:text-white', 'shadow');
+      monthlyBtn.classList.add('text-slate-500');
+
+      priceEls.forEach(el => {
+        el.textContent = el.getAttribute('data-annual');
+      });
+    });
+
+    // Dynamic Live Quote Estimator logic
+    const sqftRange = document.getElementById('estimator-sqft');
+    const sqftVal = document.getElementById('estimator-sqft-val');
+    const freqSelect = document.getElementById('estimator-frequency');
+    const resultEl = document.getElementById('estimator-result');
+    const subtextEl = document.getElementById('estimator-subtext');
+
+    const updateEstimate = () => {
+      const sqft = parseInt(sqftRange.value, 10);
+      sqftVal.textContent = sqft.toLocaleString() + ' sq ft';
+
+      let basePrice = 80; // minimum clean fee
+      
+      // Adder based on sq ft size
+      basePrice += (sqft - 500) * 0.05; // 5 cents extra per sq ft above 500
+
+      const freq = freqSelect.value;
+      let multiplier = 1;
+      let suffix = 'per clean';
+
+      if (freq === 'weekly') {
+        multiplier = 0.85; // 15% discount
+        suffix = 'per weekly clean';
+      } else if (freq === 'bi-weekly') {
+        multiplier = 0.90; // 10% discount
+        suffix = 'per bi-weekly clean';
+      } else if (freq === 'daily') {
+        multiplier = 0.75; // 25% discount
+        suffix = 'per daily clean';
+      } else {
+        suffix = 'per single clean';
+      }
+
+      const total = basePrice * multiplier;
+      resultEl.textContent = '$' + total.toFixed(2);
+      subtextEl.textContent = suffix;
+    };
+
+    sqftRange.addEventListener('input', updateEstimate);
+    freqSelect.addEventListener('change', updateEstimate);
+    updateEstimate();
+  </script>
+</body>
+</html>

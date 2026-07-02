@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z' fill='currentColor' /><path d='M35 65V35H55V45H65V65H35Z' fill='%23E8F4FF' opacity='0.85' /><path d='M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z' fill='%230F4C81' /><path d='M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z' fill='%2300A86B' /><path d='M30 65H70L65 70H35L30 65Z' fill='%2300A86B' /><rect x='47' y='70' width='6' height='12' rx='2' fill='%2300A86B' /></svg>">
+  <title>Gallery - CleanPro Facility Management</title>
+  <meta name="description" content="Browse our professional facility management portfolio. Filter through images of our corporate teams, advanced cleaning equipment, and before-after transformations.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0F4C81',
+              light: '#24659D',
+              dark: '#0A3357',
+            },
+            secondary: {
+              DEFAULT: '#00A86B',
+              light: '#00C37C',
+              dark: '#008E5A',
+            },
+            accent: '#E8F4FF',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 min-h-screen transition-colors duration-300 pt-20">
+
+  <!-- Header -->
+ <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between h-20">
+    
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center space-x-2 shrink-0" id="nav-logo-link">
+      <!-- SVG Code Remains Same -->
+        <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+            <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
+            <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+            <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+          </svg>
+      <span class="text-lg md:text-xl font-bold tracking-tight text-primary dark:text-white">
+        CleanPro <span class="text-secondary font-medium">Facility</span>
+      </span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <!-- Changed space-x-6 to space-x-4 for tighter fit at 1024px -->
+    <nav class="hidden lg:flex space-x-4 xl:space-x-8 items-center">
+      <a href="index.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Home</a>
+      <a href="home2.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Home 2</a>
+      <a href="aboutus.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">About Us</a>
+      <a href="services.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Services</a>
+      <a href="gallery.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Gallery</a>
+      <a href="pricing.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Pricing</a>
+      <a href="contact.html" class="nav-link text-xs xl:text-sm font-medium hover:text-primary transition-colors">Contact</a>
+    </nav>
+
+    <!-- Navbar Controls -->
+    <!-- Added shrink-0 to prevent these buttons from squishing -->
+    <div class="hidden lg:flex items-center space-x-3 shrink-0">
+      <button class="dir-toggle-btn flex items-center space-x-1 px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold">
+        <span class="dir-toggle-text">LTR</span>
+        <i data-lucide="languages" class="w-3 h-3"></i>
+      </button>
+      
+      <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
+        <i class="theme-toggle-icon w-4 h-4" data-lucide="moon"></i>
+      </button>
+
+      <a href="login.html" class="text-xs font-semibold text-slate-700">Login</a>
+      <a href="booknow.html" class="bg-primary text-white font-bold text-xs px-4 py-2 rounded-xl shadow-lg">Book Now</a>
+    </div>
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="flex items-center lg:hidden space-x-2">
+      <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200"><i class="w-5 h-5" data-lucide="moon"></i></button>
+      <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 animate-slide-in">
+      <div class="px-2 pt-2 pb-4 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Home</a>
+        <a href="home2.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Home 2</a>
+        <a href="aboutus.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">About Us</a>
+        <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Services</a>
+        <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Gallery</a>
+        <a href="pricing.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Pricing</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Contact</a>
+        <div class="border-t border-slate-200 dark:border-slate-700 my-2 pt-2 flex flex-col space-y-2 px-3">
+          <!-- Mobile LTR Toggle -->
+          <button class="dir-toggle-btn w-full flex items-center justify-between px-3 py-2 rounded-md border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-semibold">
+            <span>Layout Direction</span>
+            <span class="flex items-center space-x-1"><span class="dir-toggle-text">LTR</span><i data-lucide="languages" class="w-4 h-4"></i></span>
+          </button>
+          <a href="login.html" class="block text-center py-2 text-base font-semibold text-slate-700 dark:text-slate-200">Login</a>
+          <a href="booknow.html" class="block text-center bg-primary dark:bg-secondary text-white font-bold py-2.5 rounded-lg">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero - 2 Column Grid -->
+  <section class="bg-gradient-to-br from-slate-900 via-primary-dark to-slate-900 py-16 lg:py-24 border-b border-slate-100 dark:border-slate-800 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span class="inline-block text-xs font-extrabold text-secondary uppercase tracking-widest bg-secondary/20 px-3 py-1.5 rounded-full">Our Portfolio</span>
+          <h1 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">Visual Proof of Our Cleaning Excellence</h1>
+          <p class="text-lg text-slate-300 w-full max-w-prose">Browse high-resolution visuals of our professional teams, industrial-grade equipment, and remarkable before-and-after facility transformations verified by our QA supervisors.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="booknow.html" class="bg-secondary hover:bg-secondary-light text-slate-900 font-bold px-6 py-3 rounded-xl shadow-lg transition-all">Book a Service</a>
+            <a href="contact.html" class="border border-white/30 text-white font-bold px-6 py-3 rounded-xl hover:bg-white/10 transition-all">Talk to Us</a>
+          </div>
+          <div class="flex flex-wrap gap-6 pt-2">
+            <div><span class="text-3xl font-extrabold text-secondary">1,200+</span><p class="text-xs text-slate-400 font-semibold mt-0.5">Facilities Cleaned</p></div>
+            <div><span class="text-3xl font-extrabold text-secondary">98%</span><p class="text-xs text-slate-400 font-semibold mt-0.5">QA Pass Rate</p></div>
+            <div><span class="text-3xl font-extrabold text-secondary">50+</span><p class="text-xs text-slate-400 font-semibold mt-0.5">Cities Covered</p></div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="assets/g1" alt="Executive Office" class="rounded-2xl shadow-xl w-full h-48 object-cover">
+            <img src="assets/g2" alt="Professional Cleaners" class="rounded-2xl shadow-xl w-full h-48 object-cover mt-8">
+            <img src="assets/g3" alt="Eco Cleaning" class="rounded-2xl shadow-xl w-full h-48 object-cover -mt-4">
+            <img src="assets/g4" alt="Commercial Cleaning" class="rounded-2xl shadow-xl w-full h-48 object-cover mt-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="py-10 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <button data-filter="all" class="gallery-filter-btn px-5 py-2 rounded-xl text-sm font-bold bg-primary text-white dark:bg-secondary dark:text-slate-900 transition-all shadow-sm">All Photos</button>
+        <button data-filter="office" class="gallery-filter-btn px-5 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-600 dark:bg-slate-850 dark:text-slate-300 hover:bg-slate-200 transition-all">Office Cleaning</button>
+        <button data-filter="commercial" class="gallery-filter-btn px-5 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-600 dark:bg-slate-850 dark:text-slate-300 hover:bg-slate-200 transition-all">Commercial Buildings</button>
+        <button data-filter="team" class="gallery-filter-btn px-5 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-600 dark:bg-slate-850 dark:text-slate-300 hover:bg-slate-200 transition-all">Team Crew</button>
+        <button data-filter="equipment" class="gallery-filter-btn px-5 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-600 dark:bg-slate-850 dark:text-slate-300 hover:bg-slate-200 transition-all">Equipment</button>
+        <button data-filter="before-after" class="gallery-filter-btn px-5 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-600 dark:bg-slate-850 dark:text-slate-300 hover:bg-slate-200 transition-all">Before & After</button>
+        <button data-filter="facilities" class="gallery-filter-btn px-5 py-2 rounded-xl text-sm font-bold bg-slate-100 text-slate-600 dark:bg-slate-850 dark:text-slate-300 hover:bg-slate-200 transition-all">Facilities</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid (Masonry System) -->
+  <section class="pb-24 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div id="gallery-masonry" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Item 1: Office -->
+        <div class="gallery-item bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm relative group transition-all duration-300" data-category="office facilities">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/Executive Conference Room" alt="Executive Conference Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="#" class="lightbox-trigger p-3 bg-white text-slate-800 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"><i data-lucide="maximize" class="w-5 h-5"></i></a>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 dark:text-white text-base">Executive Conference Room</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Post-cleaning dust-free polishing</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Commercial -->
+        <div class="gallery-item bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm relative group transition-all duration-300" data-category="commercial facilities">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/Skyscraper Glass Lobby" alt="Corporate Lobby Facade" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="#" class="lightbox-trigger p-3 bg-white text-slate-800 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"><i data-lucide="maximize" class="w-5 h-5"></i></a>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 dark:text-white text-base">Skyscraper Glass Lobby</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Sanitized turnstiles and glass facades</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Team -->
+        <div class="gallery-item bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm relative group transition-all duration-300" data-category="team">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/Evening Operations Team" alt="CleanPro Cleaning Squad" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="#" class="lightbox-trigger p-3 bg-white text-slate-800 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"><i data-lucide="maximize" class="w-5 h-5"></i></a>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 dark:text-white text-base">Evening Operations Team</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Certified janitors with green chemicals</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Equipment -->
+        <div class="gallery-item bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm relative group transition-all duration-300" data-category="equipment">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/HEPA Filtration Vacuums" alt="Hospital Grade HEPA Vacuum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="#" class="lightbox-trigger p-3 bg-white text-slate-800 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"><i data-lucide="maximize" class="w-5 h-5"></i></a>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 dark:text-white text-base">HEPA Filtration Vacuums</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Quiet commercial grade dust removal</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Before After -->
+        <div class="gallery-item bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm relative group transition-all duration-300" data-category="before-after office">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/Carpet Restoration" alt="Office Carpet Restoration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="#" class="lightbox-trigger p-3 bg-white text-slate-800 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"><i data-lucide="maximize" class="w-5 h-5"></i></a>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 dark:text-white text-base">Carpet Restoration</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Post steam extraction deep clean</p>
+          </div>
+        </div>
+
+        <!-- Item 6: Facilities -->
+        <div class="gallery-item bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm relative group transition-all duration-300" data-category="facilities commercial">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/Corporate Lounge Space" alt="Executive Lounge Area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a href="#" class="lightbox-trigger p-3 bg-white text-slate-800 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"><i data-lucide="maximize" class="w-5 h-5"></i></a>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 dark:text-white text-base">Corporate Lounge Space</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Furniture vacuumed and wood tables polished</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Popup (Hidden by default) -->
+  <div id="lightbox-modal" class="hidden fixed inset-0 z-50 items-center justify-center lightbox-overlay">
+    <!-- Backdrop overlay -->
+    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-sm transition-opacity"></div>
+    
+    <!-- Content container -->
+    <div class="relative z-10 max-w-4xl w-full p-4 flex flex-col items-center">
+      <!-- Image frame -->
+      <div class="relative bg-black rounded-2xl overflow-hidden max-h-[70vh] flex items-center justify-center shadow-2xl border border-white/10">
+        <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[70vh] object-contain">
+        
+        <!-- Controls overlay -->
+        <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-black/40 hover:bg-black/85 text-white rounded-full transition-colors" title="Previous image"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+        <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-black/40 hover:bg-black/85 text-white rounded-full transition-colors" title="Next image"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+      </div>
+
+      <!-- Close Button -->
+      <button id="lightbox-close" class="absolute top-4 right-4 p-2 bg-black/55 text-white rounded-full hover:bg-red-600 transition-colors" title="Close"><i data-lucide="x" class="w-6 h-6"></i></button>
+
+      <!-- Caption Box -->
+      <div id="lightbox-caption" class="w-full text-center text-white mt-4 max-w-xl">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-primary dark:bg-secondary text-white dark:text-slate-900 p-3.5 rounded-full shadow-lg opacity-0 pointer-events-none hover:scale-110 active:scale-95 transition-all duration-300">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- Before & After Transformation Section -->
+  <!-- <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 space-y-4">
+        <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Transformation</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Before &amp; After: Real Client Spaces</h2>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto w-full">Witness the dramatic difference our certified cleaning protocols make in real commercial environments — every result verified by our QA supervisor teams.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-3">
+          <div class="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden shadow-lg">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?auto=format&fit=crop&w=300&q=80" alt="Before cleaning" class="w-full h-40 object-cover">
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-md">Before</span>
+            </div>
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=300&q=80" alt="After cleaning" class="w-full h-40 object-cover">
+              <span class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-2 py-0.5 rounded-md">After</span>
+            </div>
+          </div>
+          <h4 class="font-bold text-slate-900 dark:text-white">Corporate Office Lobby</h4>
+          <p class="text-sm text-slate-500 w-full min-h-[40px]">Dust removal, floor polishing, and surface disinfection completed in 4 hours by a 3-person crew.</p>
+        </div>
+        <div class="space-y-3">
+          <div class="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden shadow-lg">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1599700403969-f77b3aa740fc?auto=format&fit=crop&w=300&q=80" alt="Before cleaning" class="w-full h-40 object-cover">
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-md">Before</span>
+            </div>
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=300&q=80" alt="After cleaning" class="w-full h-40 object-cover">
+              <span class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-2 py-0.5 rounded-md">After</span>
+            </div>
+          </div>
+          <h4 class="font-bold text-slate-900 dark:text-white">Medical Lab Sterilization</h4>
+          <p class="text-sm text-slate-500 w-full min-h-[40px]">CDC-grade disinfection applied to all surfaces using UV-C light and hospital-grade quaternary ammonium solutions.</p>
+        </div>
+        <div class="space-y-3">
+          <div class="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden shadow-lg">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?auto=format&fit=crop&w=300&q=80" alt="Before cleaning" class="w-full h-40 object-cover">
+              <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-md">Before</span>
+            </div>
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=300&q=80" alt="After cleaning" class="w-full h-40 object-cover">
+              <span class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-2 py-0.5 rounded-md">After</span>
+            </div>
+          </div>
+          <h4 class="font-bold text-slate-900 dark:text-white">Industrial Warehouse Floor</h4>
+          <p class="text-sm text-slate-500 w-full min-h-[40px]">Automated scrubber system removed grease, oil stains, and heavy debris. Sealed with protective industrial coating.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- QA Photo Upload Process -->
+  <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-6">
+          <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Quality Assurance</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Our 5-Step Photo QA Verification Process</h2>
+          <p class="text-slate-600 dark:text-slate-400 w-full">Every cleaning shift is photo-documented and reviewed by a dedicated QA supervisor before the client is notified. No space is marked complete without photographic sign-off.</p>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-4">
+              <span class="flex-shrink-0 w-9 h-9 bg-primary text-white font-bold rounded-full flex items-center justify-center text-sm">1</span>
+              <div><h4 class="font-bold text-slate-900 dark:text-white">Pre-Clean Inspection Photos</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Supervisor photographs the space before work begins to document initial condition and set cleaning scope.</p></div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="flex-shrink-0 w-9 h-9 bg-primary text-white font-bold rounded-full flex items-center justify-center text-sm">2</span>
+              <div><h4 class="font-bold text-slate-900 dark:text-white">Active Cleaning Documentation</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Team leaders capture photos of each major task completed: floors, restrooms, kitchens, and common areas.</p></div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="flex-shrink-0 w-9 h-9 bg-secondary text-white font-bold rounded-full flex items-center justify-center text-sm">3</span>
+              <div><h4 class="font-bold text-slate-900 dark:text-white">Post-Clean QA Walkthrough</h4><p class="text-sm text-slate-500 mt-0.5 w-full">QA supervisor conducts a final walkthrough and photographs each zone against our standardized cleaning checklist.</p></div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="flex-shrink-0 w-9 h-9 bg-secondary text-white font-bold rounded-full flex items-center justify-center text-sm">4</span>
+              <div><h4 class="font-bold text-slate-900 dark:text-white">Digital Report Upload</h4><p class="text-sm text-slate-500 mt-0.5 w-full">All photos are uploaded to the client's secure portal dashboard with timestamps and crew member IDs.</p></div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <span class="flex-shrink-0 w-9 h-9 bg-primary text-white font-bold rounded-full flex items-center justify-center text-sm">5</span>
+              <div><h4 class="font-bold text-slate-900 dark:text-white">Client Approval & Sign-Off</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Client receives a completion notification and reviews photos before digitally approving the shift as complete.</p></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="assets/g5" alt="QA Photo Process" class="w-full h-96 object-cover rounded-3xl shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 md:py-24 bg-primary dark:bg-slate-800">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">
+      Inspired by our results?
+    </h2>
+    <p class="text-blue-50 text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90">
+      See why thousands of clients trust CleanPro for their facility maintenance. Let's start your transformation today.
+    </p>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="booknow.html" class="px-8 py-4 bg-white text-primary font-bold rounded-xl shadow-lg hover:bg-slate-100 transition-all transform hover:-translate-y-1">
+        Get a Free Quote
+      </a>
+      <a href="contact.html" class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 transition-all">
+        Contact Our Experts
+      </a>
+    </div>
+  </div>
+</section>
+    <footer class="bg-slate-900 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-slate-800">
+        
+        <!-- Logo and Brand -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
+            <svg class="h-8 w-8 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+              <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+              <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" />
+              <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+              <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+            </svg>
+            <span class="text-lg font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+          </a>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
+          </p>
+         <div class="flex space-x-3 rtl:space-x-reverse">
+  <!-- Facebook -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-[#1877F2] text-white transition-colors" title="Facebook">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+  </a>
+  <!-- Instagram -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-[#E1306C] text-white transition-colors" title="Instagram">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+  </a>
+  <!-- LinkedIn -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-[#0A66C2] text-white transition-colors" title="LinkedIn">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+  </a>
+  <!-- X (Twitter) -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-black text-white transition-colors" title="Twitter/X">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  </a>
+  <!-- YouTube -->
+  <a href="#" class="p-2 bg-slate-800 rounded-lg hover:bg-[#FF0000] text-white transition-colors" title="YouTube">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+  </a>
+</div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
+            <li><a href="aboutus.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+          </ul>
+        </div>
+
+        <!-- Extra Pages -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Utility</h4>
+          <ul class="space-y-2 text-sm">
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="booknow.html" class="hover:text-white transition-colors">Book Now</a></li>
+            <li><a href="comingsoon.html" class="hover:text-white transition-colors">Coming Soon</a></li>
+            <li><a href="404.html" class="hover:text-white transition-colors">404 Error</a></li>
+            <li><a href="login.html" class="hover:text-white transition-colors">Login</a></li>
+            <li><a href="signup.html" class="hover:text-white transition-colors">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Area -->
+        <div class="lg:col-span-4 space-y-4">
+          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Newsletter</h4>
+          <p class="text-sm text-slate-400">Subscribe to receive facilities management insights and seasonal promotions.</p>
+          <form class="space-y-2" id="footer-newsletter">
+            <div class="relative">
+              <input type="email" placeholder="Your corporate email" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary placeholder-slate-500" required>
+            </div>
+            <button type="submit" class="w-full bg-primary hover:bg-primary-light text-white font-bold py-3 px-4 rounded-xl text-sm transition-all shadow-md">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright Area -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <span>&copy; 2026 CleanPro Facility Management. All rights reserved.</span>
+        <div class="flex space-x-4 rtl:space-x-reverse">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+          <a href="#" class="hover:text-white">Cookie Settings</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

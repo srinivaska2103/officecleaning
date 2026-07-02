@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z' fill='currentColor' /><path d='M35 65V35H55V45H65V65H35Z' fill='%23E8F4FF' opacity='0.85' /><path d='M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z' fill='%230F4C81' /><path d='M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z' fill='%2300A86B' /><path d='M30 65H70L65 70H35L30 65Z' fill='%2300A86B' /><rect x='47' y='70' width='6' height='12' rx='2' fill='%2300A86B' /></svg>">
+  <title>Page Not Found - CleanPro</title>
+  <meta name="description" content="Oops! The page you were looking for at CleanPro Facility Management could not be located. Sweep back to home.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0F4C81',
+              light: '#24659D',
+              dark: '#0A3357',
+            },
+            secondary: {
+              DEFAULT: '#00A86B',
+              light: '#00C37C',
+              dark: '#008E5A',
+            },
+            accent: '#E8F4FF',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 min-h-screen transition-colors duration-300 flex flex-col items-center justify-center pt-28 pb-12 px-4 relative">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse" id="nav-logo-link">
+          <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+            <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
+            <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+            <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+          </svg>
+          <span class="text-xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+        </a>
+
+        <!-- Controls -->
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          <a href="index.html" class="hidden sm:inline-flex items-center space-x-1 text-sm font-semibold text-slate-500 hover:text-primary dark:hover:text-secondary mr-2 transition-colors">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span>Back to Site</span>
+          </a>
+          <!-- Direction Toggle -->
+          <button class="dir-toggle-btn flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold" title="Toggle Layout Direction">
+            <span class="dir-toggle-text">LTR</span>
+            <i data-lucide="languages" class="w-4 h-4"></i>
+          </button>
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
+            <i class="theme-toggle-icon w-5 h-5" data-lucide="moon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Inner Card -->
+  <div class="max-w-md w-full bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 p-8 rounded-3xl shadow-xl text-center space-y-6">
+    
+    <!-- Custom SVG Cleaning Robot Visual -->
+    <div class="relative w-44 h-44 mx-auto flex items-center justify-center bg-slate-50 dark:bg-slate-900 rounded-full border border-slate-100 dark:border-slate-850 shadow-inner">
+      <!-- 404 numeric text -->
+      <span class="text-6xl font-black text-slate-200 dark:text-slate-700 tracking-wider absolute z-0 select-none">404</span>
+
+      <!-- Floating Vacuum Cleaning Robot SVG -->
+      <svg class="h-24 w-24 text-primary dark:text-secondary z-10 animate-float" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Robot Base -->
+        <circle cx="50" cy="50" r="38" fill="#0F4C81" class="fill-primary" />
+        <circle cx="50" cy="50" r="34" fill="#E8F4FF" opacity="0.15" />
+        
+        <!-- Bumper guard -->
+        <path d="M15 50C15 30.67 30.67 15 50 15C69.33 15 85 30.67 85 50" stroke="#00A86B" class="stroke-secondary" stroke-width="4" stroke-linecap="round" />
+        
+        <!-- Laser dome -->
+        <circle cx="50" cy="30" r="10" fill="#00A86B" class="fill-secondary" />
+        <circle cx="50" cy="30" r="4" fill="#FFFFFF" class="animate-ping" />
+
+        <!-- Cleaning bristles / lines -->
+        <line x1="25" y1="75" x2="35" y2="65" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+        <line x1="75" y1="75" x2="65" y2="65" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <!-- Error message text -->
+    <div class="space-y-2">
+      <h2 class="text-2xl font-black text-slate-900 dark:text-white">This Page Was Swept Away!</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400">We couldn't locate the file you requested. Our staff might have cleaned it a bit too thoroughly!</p>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex flex-col gap-2 pt-2">
+      <a href="index.html" class="w-full bg-primary hover:bg-primary-light dark:bg-secondary dark:text-slate-900 dark:hover:bg-secondary-light text-white font-bold py-3 px-6 rounded-xl shadow-md transition-all flex items-center justify-center space-x-1.5">
+        <i data-lucide="home" class="w-4 h-4"></i>
+        <span>Return to Safety</span>
+      </a>
+      <a href="contact.html" class="w-full bg-slate-50 dark:bg-slate-900 text-slate-650 dark:text-slate-300 font-bold py-3 px-6 rounded-xl hover:bg-slate-100 transition-all text-sm border border-slate-150 dark:border-slate-800">
+        Report Broken Link
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Simplified Utility Footer with Social Icons -->
+  <div class="mt-8 text-center text-xs text-slate-400 dark:text-slate-500 space-y-4">
+    <div class="flex justify-center space-x-3 rtl:space-x-reverse">
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="Facebook"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+      <a href="#" class="p-2 bg-white dark:bg-slate-800 text-slate-400 hover:text-primary dark:hover:text-secondary rounded-lg transition-colors border border-slate-200 dark:border-slate-700 shadow-sm" title="Twitter/X"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+    </div>
+    <p>&copy; 2026 CleanPro Facility Management. All rights reserved.</p>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
