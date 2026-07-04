@@ -79,13 +79,12 @@
         <i class="theme-toggle-icon w-4 h-4" data-lucide="moon"></i>
       </button>
 
-      <a href="login.html" class="text-xs font-semibold text-slate-700">Login</a>
+<a href="login.html" class="bg-secondary text-white font-bold text-xs px-4 py-2 rounded-xl shadow-lg">Login</a>
       <a href="booknow.html" class="bg-primary text-white font-bold text-xs px-4 py-2 rounded-xl shadow-lg">Book Now</a>
     </div>
 
     <!-- Hamburger Icon for Mobile -->
     <div class="flex items-center lg:hidden space-x-2">
-      <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200"><i class="w-5 h-5" data-lucide="moon"></i></button>
       <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200"><i data-lucide="menu" class="w-6 h-6"></i></button>
     </div>
 
@@ -102,81 +101,129 @@
         <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Gallery</a>
         <a href="pricing.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Pricing</a>
         <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium nav-link">Contact</a>
-        <div class="border-t border-slate-200 dark:border-slate-700 my-2 pt-2 flex flex-col space-y-2 px-3">
-          <!-- Mobile LTR Toggle -->
-          <button class="dir-toggle-btn w-full flex items-center justify-between px-3 py-2 rounded-md border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-semibold">
-            <span>Layout Direction</span>
-            <span class="flex items-center space-x-1"><span class="dir-toggle-text">LTR</span><i data-lucide="languages" class="w-4 h-4"></i></span>
-          </button>
-          <a href="login.html" class="block text-center py-2 text-base font-semibold text-slate-700 dark:text-slate-200">Login</a>
-          <a href="booknow.html" class="block text-center bg-primary dark:bg-secondary text-white font-bold py-2.5 rounded-lg">Book Now</a>
-        </div>
+       <div class="border-t border-slate-200 dark:border-slate-800 my-4 pt-4 flex flex-col space-y-4 px-3 w-full">
+  
+  <!-- Row 1: System Control Settings (Direction & Theme) -->
+  <div class="flex items-center gap-2 w-full">
+    <!-- Direction Toggle Button -->
+    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors">
+      <span>Layout Direction</span>
+      <span class="flex items-center gap-1">
+        <span class="dir-toggle-text text-xs text-primary dark:text-secondary font-bold">LTR</span>
+        <i data-lucide="languages" class="w-4 h-4 text-slate-400"></i>
+      </span>
+    </button>
+    
+    <!-- Theme Toggle Button (Supports Dark & Light UI States) -->
+    <button class="theme-toggle-btn p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-secondary transition-colors shrink-0">
+      <i class="w-5 h-5" data-lucide="moon"></i>
+    </button>
+  </div>
+
+  <!-- Row 2: User Access Actions -->
+  <div class="grid grid-cols-2 gap-3 pt-1">
+    <!-- Login Link -->
+    <a href="login.html" class="flex items-center justify-center bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 font-bold text-xs px-4 py-3 rounded-xl shadow-sm text-center transition-colors">
+      Login
+    </a>
+    
+    <!-- Book Now Primary Action -->
+    <a href="booknow.html" class="flex items-center justify-center bg-primary hover:bg-primary/90 dark:bg-secondary dark:hover:bg-secondary/90 text-white dark:text-slate-950 font-bold text-xs px-4 py-3 rounded-xl shadow-md text-center transition-all">
+      Book Now
+    </a>
+  </div>
+
+</div>
       </div>
     </div>
   </header>
 
   <!-- Video Hero Section -->
- <section class="relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden pt-20 bg-cover bg-center bg-no-repeat" 
+<section class="relative min-h-screen flex items-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white overflow-hidden pt-20 bg-cover bg-center bg-no-repeat transition-colors duration-300" 
          style="background-image: url('assets/home2hero');">
   
-  <!-- Overlay to ensure text readability -->
-  <div class="absolute inset-0 bg-slate-950/80 z-0"></div>
-  <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-transparent z-10"></div>
+  <!-- Overlays to ensure text readability across light and dark frames -->
+  <div class="absolute inset-0 bg-slate-50/80 dark:bg-slate-950/80 z-0 transition-colors duration-300"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-slate-50/95 via-slate-50/70 to-transparent dark:from-slate-950/95 dark:via-slate-950/60 dark:to-transparent z-10 transition-colors duration-300"></div>
   
   <!-- Hero Content -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-20 w-full">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       
-      <!-- Left: Text -->
-      <div class="space-y-6">
+      <!-- Left Column: Marketing & Typography Context (Spans 7 tracks) -->
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
         <span class="text-xs sm:text-sm font-bold bg-secondary px-3 py-1.5 rounded-full text-slate-950 uppercase tracking-widest inline-block">
           Enterprise Standards
         </span>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-slate-900 dark:text-white">
           Redefining Corporate Hygiene & Facility Management
         </h1>
-        <p class="text-slate-300 text-base sm:text-lg w-full max-w-xl">
+        <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg w-full max-w-xl mx-auto lg:mx-0 leading-relaxed">
           CleanPro provides carbon-neutral cleaning programs, fully bonded sanitization squads, and audited ISO quality checks for corporate head offices and industrial spaces.
         </p>
         
-        <div class="flex flex-col sm:flex-row gap-4 pt-4">
-          <a href="booknow.html" class="bg-secondary hover:bg-secondary-light text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-lg transition-all text-center">
+        <!-- Call To Actions -->
+        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+          <a href="booknow.html" class="bg-secondary hover:bg-secondary/90 text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 text-center text-sm">
             Explore Contracts
           </a>
-          <a href="pricing.html" class="bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm text-white font-bold px-8 py-4 rounded-xl transition-all text-center">
+          <a href="pricing.html" class="bg-slate-200/60 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/20 border border-slate-300/80 dark:border-white/20 backdrop-blur-sm text-slate-900 dark:text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 text-center text-sm">
             Compare Packages
           </a>
         </div>
 
-        <div class="flex flex-wrap gap-8 pt-2">
-          <div><span class="text-3xl font-extrabold text-secondary">ISO</span><p class="text-xs text-slate-400 font-semibold">9001 Certified</p></div>
-          <div><span class="text-3xl font-extrabold text-secondary">24/7</span><p class="text-xs text-slate-400 font-semibold">Operations Support</p></div>
-          <div><span class="text-3xl font-extrabold text-secondary">0%</span><p class="text-xs text-slate-400 font-semibold">Hidden Fees</p></div>
+        <!-- Metric Indicators -->
+        <div class="flex flex-wrap justify-center lg:justify-start gap-8 pt-4">
+          <div>
+            <span class="text-3xl font-extrabold text-primary dark:text-secondary">ISO</span>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-bold mt-0.5">9001 Certified</p>
+          </div>
+          <div>
+            <span class="text-3xl font-extrabold text-primary dark:text-secondary">24/7</span>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-bold mt-0.5">Operations Support</p>
+          </div>
+          <div>
+            <span class="text-3xl font-extrabold text-primary dark:text-secondary">0%</span>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-bold mt-0.5">Hidden Fees</p>
+          </div>
         </div>
       </div>
 
-      <!-- Right: Floating image card -->
-      <!-- <div class="hidden lg:flex justify-center items-center">
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=500&q=80" alt="Corporate Facility Management" class="rounded-3xl shadow-2xl w-full h-[520px] object-cover border-4 border-white/10">
+      <!-- Right Column: Micro-interactive Dashboard Panel (Spans 5 tracks) -->
+      <div class="lg:col-span-5 hidden lg:flex justify-center items-center">
+        <div class="relative w-full max-w-md">
+          <!-- Decorative Glow Backdrop Rings -->
+          <div class="absolute -top-6 -left-6 w-64 h-64 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl -z-10"></div>
+          <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-secondary/5 dark:bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+
+          <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=500&q=80" alt="Corporate Facility Management operations" class="rounded-3xl shadow-2xl w-full h-[480px] object-cover border-4 border-slate-200 dark:border-white/10 transition-transform duration-500 hover:scale-[1.01]">
           
-          <div class="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">
-            <div class="flex items-center space-x-3">
-              <span class="p-2.5 bg-secondary/20 rounded-xl"><i data-lucide="shield-check" class="w-6 h-6 text-secondary"></i></span>
-              <div><p class="font-bold text-white text-sm">Green Seal Verified</p><p class="text-xs text-slate-400">All products EPA Safer Choice</p></div>
+          <!-- Bottom Left Badge Overlay -->
+          <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-100 dark:border-slate-800 shadow-xl transition-colors duration-300">
+            <div class="flex items-center space-x-3 text-left">
+              <span class="p-2.5 bg-primary/10 dark:bg-secondary/20 rounded-xl text-primary dark:text-secondary">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </span>
+              <div>
+                <p class="font-bold text-slate-800 dark:text-white text-sm">Green Seal Verified</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400">All products EPA Safer Choice</p>
+              </div>
             </div>
           </div>
           
-          <div class="absolute -top-6 -right-6 bg-secondary text-slate-900 rounded-2xl p-4 shadow-xl">
-            <p class="font-extrabold text-2xl">500+</p>
-            <p class="text-xs font-bold">Active Clients</p>
+          <!-- Top Right Counter Overlay -->
+          <div class="absolute -top-6 -right-6 bg-secondary text-slate-900 rounded-2xl p-4 shadow-xl text-left transform rotate-1">
+            <p class="font-extrabold text-2xl tracking-tight">500+</p>
+            <p class="text-xs font-bold text-slate-800">Active Clients</p>
           </div>
         </div>
-      </div> -->
+      </div>
+      
     </div>
   </div>
 </section>
-
   <!-- Live Stats Section -->
   <section class="py-16 bg-primary dark:bg-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -413,7 +460,7 @@
           <div class="space-y-1 w-full">
             <h4 class="font-bold text-slate-950 dark:text-white">Zero Lock-In Contracts</h4>
             <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed min-h-[72px] w-full">
-              Cancel or edit your packages anytime. We believe outstanding, consistent performance is the absolute best way to retain corporate trust.
+              Cancel or edit your packages anytime. We believe outstanding, consistent performance is the absolute best way to retain trust.
             </p>
           </div>
         </div>

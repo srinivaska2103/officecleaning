@@ -119,12 +119,46 @@
       <div>
         <div class="flex justify-between items-center mb-1.5">
           <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase">Password</label>
-          <a href="#" class="text-xs text-primary dark:text-secondary hover:underline">Forgot password?</a>
         </div>
-        <div class="relative">
-          <input type="password" placeholder="••••••••" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
-          <i data-lucide="lock" class="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2"></i>
-        </div>
+       <div class="relative w-full">
+  <!-- Left Icon: Lock -->
+  <i data-lucide="lock" class="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+  
+  <!-- Password Input (pl-11 for lock icon, pr-11 for eye icon) -->
+  <input type="password" id="password-field" placeholder="••••••••" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 pl-11 pr-11 text-sm focus:outline-none focus:ring-2 focus:ring-primary text-slate-800 dark:text-white" required>
+  
+  <!-- Right Icon: Interactive Eye Button -->
+  <button type="button" onclick="togglePasswordVisibility()" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary dark:hover:text-secondary focus:outline-none transition-colors duration-200">
+    <!-- Clean, professional SVG Eye Icon (replaces data-lucide for cross-framework reliance) -->
+    <svg id="eye-icon-svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+      <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+    </svg>
+  </button>
+</div>
+
+<!-- Optional: Simple vanilla JavaScript snippet to make the eye button actually work -->
+<script>
+  function togglePasswordVisibility() {
+    const passwordField = document.getElementById('password-field');
+    const eyeIcon = document.getElementById('eye-icon-svg');
+    
+    if (passwordField.type === 'password') {
+      passwordField.type = 'text';
+      // Change SVG path to eye-off / slashed-eye view
+      eyeIcon.innerHTML = `
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+      `;
+    } else {
+      passwordField.type = 'password';
+      // Revert back to normal eye path
+      eyeIcon.innerHTML = `
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      `;
+    }
+  }
+</script>
       </div>
 
       <div class="flex items-center justify-between text-sm">
@@ -132,6 +166,8 @@
           <input type="checkbox" class="w-4 h-4 text-primary border-slate-300 rounded focus:ring-primary accent-primary dark:accent-secondary">
           <span>Remember this computer</span>
         </label>
+                  <a href="#" class="text-xs text-primary dark:text-secondary hover:underline">Forgot password?</a>
+
       </div>
 
       <button type="submit" class="w-full bg-primary hover:bg-primary-light dark:bg-secondary dark:text-slate-900 dark:hover:bg-secondary-light text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-md">
