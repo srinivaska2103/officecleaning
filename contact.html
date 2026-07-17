@@ -44,7 +44,7 @@
     <!-- Logo -->
     <a href="index.html" class="flex items-center space-x-2 shrink-0" id="nav-logo-link">
       <!-- SVG Code Remains Same -->
-        <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
             <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
@@ -72,9 +72,8 @@
     <!-- Navbar Controls -->
     <!-- Added shrink-0 to prevent these buttons from squishing -->
     <div class="hidden lg:flex items-center space-x-3 shrink-0">
-      <button class="dir-toggle-btn flex items-center space-x-1 px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold">
+      <button class="dir-toggle-btn px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-colors" title="Toggle Layout Direction">
         <span class="dir-toggle-text">LTR</span>
-        <i data-lucide="languages" class="w-3 h-3"></i>
       </button>
       
       <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
@@ -108,11 +107,10 @@
   <!-- Row 1: System Control Settings (Direction & Theme) -->
   <div class="flex items-center gap-2 w-full">
     <!-- Direction Toggle Button -->
-    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors">
+    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors" title="Toggle Layout Direction">
       <span>Layout Direction</span>
       <span class="flex items-center gap-1">
         <span class="dir-toggle-text text-xs text-primary dark:text-secondary font-bold">LTR</span>
-        <i data-lucide="languages" class="w-4 h-4 text-slate-400"></i>
       </span>
     </button>
     
@@ -146,7 +144,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
           <span class="inline-block text-xs font-extrabold text-primary dark:text-secondary uppercase tracking-widest bg-primary/10 dark:bg-secondary/10 px-3 py-1.5 rounded-full">Get in Touch</span>
-          <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">Reach Our Facility Management Team</h1>
+          <h1 class="text-4xl lg:text-5xl font-semibold text-slate-900 dark:text-white leading-tight">Reach Our Facility Management Team</h1>
           <p class="text-lg text-slate-600 dark:text-slate-400 w-full max-w-prose">Whether you need an emergency disinfection shift, a custom corporate contract, or simply have questions about our green cleaning protocols — our team is ready to assist within 2 business hours.</p>
           <div class="space-y-3">
             <div class="flex items-center space-x-3"><i data-lucide="phone" class="w-5 h-5 text-primary dark:text-secondary"></i><span class="text-slate-700 dark:text-slate-300 font-semibold">+1 (800) 555-0199</span></div>
@@ -182,7 +180,7 @@
         <!-- Left Side: Contact details & Map -->
         <div class="lg:col-span-5 space-y-8">
           <div class="space-y-4">
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">CleanPro Headquarters</h3>
+            <h3 class="text-2xl font-semibold text-slate-900 dark:text-white">CleanPro Headquarters</h3>
             <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
               We manage facility cleanings across multiple states. Stop by our corporate offices or call our helpline.
             </p>
@@ -193,14 +191,14 @@
             <div class="flex items-start space-x-3 rtl:space-x-reverse">
               <span class="text-primary dark:text-secondary mt-0.5"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
               <div>
-                <h5 class="font-bold text-slate-900 dark:text-white">Office Address</h5>
+                <h5 class="font-semibold text-slate-900 dark:text-white">Office Address</h5>
                 <p class="text-slate-600 dark:text-slate-400 mt-0.5">500 Corporate Parkway, Suite 100, New York, NY 10001</p>
               </div>
             </div>
             <div class="flex items-start space-x-3 rtl:space-x-reverse">
               <span class="text-primary dark:text-secondary mt-0.5"><i data-lucide="phone" class="w-5 h-5"></i></span>
               <div>
-                <h5 class="font-bold text-slate-900 dark:text-white">Helpline / Support</h5>
+                <h5 class="font-semibold text-slate-900 dark:text-white">Helpline / Support</h5>
                 <p class="text-slate-600 dark:text-slate-400 mt-0.5">+1-800-555-0199 (Sales)</p>
                 <p class="text-slate-600 dark:text-slate-400 mt-0.5 font-semibold text-red-500 flex items-center space-x-1"><i data-lucide="alert-circle" class="w-4 h-4"></i><span>Emergency: +1-800-555-0190</span></p>
               </div>
@@ -208,14 +206,14 @@
             <div class="flex items-start space-x-3 rtl:space-x-reverse">
               <span class="text-primary dark:text-secondary mt-0.5"><i data-lucide="mail" class="w-5 h-5"></i></span>
               <div>
-                <h5 class="font-bold text-slate-900 dark:text-white">Email Contacts</h5>
+                <h5 class="font-semibold text-slate-900 dark:text-white">Email Contacts</h5>
                 <p class="text-slate-600 dark:text-slate-400 mt-0.5 break-all">info@cleanprofacility.com</p>
               </div>
             </div>
             <div class="flex items-start space-x-3 rtl:space-x-reverse">
               <span class="text-primary dark:text-secondary mt-0.5"><i data-lucide="clock" class="w-5 h-5"></i></span>
               <div>
-                <h5 class="font-bold text-slate-900 dark:text-white">Working Hours</h5>
+                <h5 class="font-semibold text-slate-900 dark:text-white">Working Hours</h5>
                 <p class="text-slate-600 dark:text-slate-400 mt-0.5">Mon - Fri: 08:00 AM - 06:00 PM</p>
                 <p class="text-slate-600 dark:text-slate-400 mt-0.5">Sat: 09:00 AM - 03:00 PM</p>
               </div>
@@ -228,36 +226,36 @@
 
         <!-- Right Side: Contact Form -->
         <div class="lg:col-span-7 bg-slate-50 dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-md">
-          <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Request A Custom Proposal</h3>
+          <h3 class="text-2xl font-semibold text-slate-900 dark:text-white mb-6">Request A Custom Proposal</h3>
           
           <form class="space-y-4" id="contact-form">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Full Name</label>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-400 uppercase mb-1.5">Full Name</label>
                 <input type="text" id="contact-name" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
                 <p class="text-[10px] text-red-500 mt-1 hidden error-msg" id="err-name">Full name is required</p>
               </div>
               <div>
-                <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Company Name</label>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-400 uppercase mb-1.5">Company Name</label>
                 <input type="text" id="contact-company" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
               </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Corporate Email</label>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-400 uppercase mb-1.5">Corporate Email</label>
                 <input type="email" id="contact-email" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
                 <p class="text-[10px] text-red-500 mt-1 hidden error-msg" id="err-email">Valid email is required</p>
               </div>
               <div>
-                <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Phone Number</label>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-400 uppercase mb-1.5">Phone Number</label>
                 <input type="tel" id="contact-phone" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
                 <p class="text-[10px] text-red-500 mt-1 hidden error-msg" id="err-phone">Phone number is required</p>
               </div>
             </div>
 
             <div>
-              <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">Service Category</label>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-400 uppercase mb-1.5">Service Category</label>
               <select id="contact-service" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
                 <option value="office">Office Cleaning</option>
                 <option value="commercial">Commercial Buildings</option>
@@ -268,7 +266,7 @@
             </div>
 
             <div>
-              <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-1.5">How can we help you?</label>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-400 uppercase mb-1.5">How can we help you?</label>
               <textarea id="contact-message" rows="5" class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
               <p class="text-[10px] text-red-500 mt-1 hidden error-msg" id="err-message">Please input a description</p>
             </div>
@@ -291,7 +289,7 @@
   <section id="location" class="py-12 md:py-20 bg-slate-50 dark:bg-slate-900">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-10">
-      <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Find Us</h2>
+      <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Find Us</h2>
       <p class="mt-2 text-slate-600 dark:text-slate-400">Visit our facility at the heart of the city.</p>
     </div>
 
@@ -338,15 +336,15 @@
         <!-- Logo and Brand -->
         <div class="lg:col-span-4 space-y-4">
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <svg class="h-8 w-8 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
               <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
               <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
-              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" />
+              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
               <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
               <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
             </svg>
-            <span class="text-lg font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+            <span class="text-lg md:text-xl font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed">
             CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
@@ -377,7 +375,7 @@
 
         <!-- Quick Links -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Navigation</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Navigation</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
             <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
@@ -390,7 +388,7 @@
 
         <!-- Extra Pages -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Utility</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Utility</h4>
           <ul class="space-y-2 text-sm">
           <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
             <li><a href="booknow.html" class="hover:text-white transition-colors">Book Now</a></li>
@@ -403,7 +401,7 @@
 
         <!-- Newsletter Area -->
         <div class="lg:col-span-4 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Newsletter</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Newsletter</h4>
           <p class="text-sm text-slate-400">Subscribe to receive facilities management insights and seasonal promotions.</p>
           <form class="space-y-2" id="footer-newsletter">
             <div class="relative">

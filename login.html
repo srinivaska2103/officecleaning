@@ -26,52 +26,43 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 min-h-screen transition-colors duration-300 flex flex-col items-center justify-center pt-28 pb-12 px-4 relative">
 
-  <!-- Header / Navigation -->
-  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse" id="nav-logo-link">
-          <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
-            <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
-            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
-            <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
-            <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
-            <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
-          </svg>
-          <span class="text-xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
-        </a>
-
-        <!-- Controls -->
-        <div class="flex items-center space-x-3 rtl:space-x-reverse">
-         
-          <button class="dir-toggle-btn flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold" title="Toggle Layout Direction">
-            <span class="dir-toggle-text">LTR</span>
-            <i data-lucide="languages" class="w-4 h-4"></i>
-          </button>
-          <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
-            <i class="theme-toggle-icon w-5 h-5" data-lucide="moon"></i>
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </header>
+  <!-- Floating Controls -->
+  <div class="absolute top-4 end-4 flex items-center gap-3 z-50">
+    <button class="dir-toggle-btn flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold transition-colors" title="Toggle Layout Direction">
+      <span class="dir-toggle-text">LTR</span>
+    </button>
+    <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
+      <i class="theme-toggle-icon w-5 h-5" data-lucide="moon"></i>
+    </button>
+  </div>
 
   <!-- Login Card -->
   <div class="w-full max-w-md bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-xl p-8 space-y-5">
     
+    <!-- Logo & Brand -->
+    <div class="flex justify-center mb-2">
+      <a href="index.html" class="flex items-center gap-2">
+        <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
+          <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
+          <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+          <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
+          <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
+          <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
+        </svg>
+        <span class="text-2xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+      </a>
+    </div>
+
     <div class="text-center space-y-1">
-      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Welcome Back</h2>
+      <h2 class="text-2xl font-semibold text-slate-900 dark:text-white">Welcome Back</h2>
       <p class="text-xs text-slate-500 dark:text-slate-400">Sign in to access your corporate cleaning dashboard</p>
     </div>
 
     <!-- Social Auth Buttons -->
     <div class="space-y-3">
       <!-- Google -->
-      <button class="w-full flex items-center justify-center space-x-3 py-3 px-4 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 text-sm font-semibold transition-all">
+      <button class="w-full flex items-center justify-center gap-3 py-3 px-4 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 text-sm font-semibold transition-all">
         <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="none">
           <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
           <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -82,20 +73,20 @@
       </button>
 
       <!-- Apple -->
-    <button class="w-full flex items-center justify-center space-x-3 py-3 px-4 bg-slate-900 dark:bg-white border border-slate-900 dark:border-white rounded-xl hover:bg-slate-800 dark:hover:bg-slate-100 text-sm font-semibold transition-all">
+    <button class="w-full flex items-center justify-center gap-3 py-3 px-4 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 text-sm font-semibold transition-all">
   <!-- Removed duplicate class attribute and fixed the class assignment -->
-  <svg class="w-5 h-5 flex-shrink-0 text-white dark:text-slate-900" viewBox="0 0 24 24" fill="currentColor">
+  <svg class="w-5 h-5 flex-shrink-0 text-slate-900 dark:text-white" viewBox="0 0 24 24" fill="currentColor">
     <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
   </svg>
-  <span class="text-white dark:text-slate-900">Continue with Apple</span>
+  <span class="text-slate-700 dark:text-slate-200">Continue with Apple</span>
 </button>
 
       <!-- Facebook -->
-      <button class="w-full flex items-center justify-center space-x-3 py-3 px-4 bg-[#1877F2] border border-[#1877F2] rounded-xl hover:bg-[#166FE5] text-sm font-semibold transition-all">
-        <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="white">
+      <button class="w-full flex items-center justify-center gap-3 py-3 px-4 border border-slate-200 dark:border-slate-700 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 text-sm font-semibold transition-all">
+        <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="#1877F2">
           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
         </svg>
-        <span class="text-white">Continue with Facebook</span>
+        <span class="text-slate-700 dark:text-slate-200">Continue with Facebook</span>
       </button>
     </div>
 
@@ -111,8 +102,8 @@
       <div>
         <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1.5">Work Email</label>
         <div class="relative">
-          <input type="email" placeholder="name@company.com" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 pl-11 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
-          <i data-lucide="mail" class="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2"></i>
+          <input type="email" placeholder="name@company.com" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 ps-11 pe-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
+          <i data-lucide="mail" class="w-5 h-5 text-slate-400 absolute start-4 top-1/2 -translate-y-1/2"></i>
         </div>
       </div>
 
@@ -122,13 +113,13 @@
         </div>
        <div class="relative w-full">
   <!-- Left Icon: Lock -->
-  <i data-lucide="lock" class="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+  <i data-lucide="lock" class="w-5 h-5 text-slate-400 absolute start-4 top-1/2 -translate-y-1/2 pointer-events-none"></i>
   
-  <!-- Password Input (pl-11 for lock icon, pr-11 for eye icon) -->
-  <input type="password" id="password-field" placeholder="••••••••" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 pl-11 pr-11 text-sm focus:outline-none focus:ring-2 focus:ring-primary text-slate-800 dark:text-white" required>
+  <!-- Password Input -->
+  <input type="password" id="password-field" placeholder="••••••••" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-11 text-sm focus:outline-none focus:ring-2 focus:ring-primary text-slate-800 dark:text-white" required>
   
   <!-- Right Icon: Interactive Eye Button -->
-  <button type="button" onclick="togglePasswordVisibility()" class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary dark:hover:text-secondary focus:outline-none transition-colors duration-200">
+  <button type="button" onclick="togglePasswordVisibility()" class="absolute end-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary dark:hover:text-secondary focus:outline-none transition-colors duration-200">
     <!-- Clean, professional SVG Eye Icon (replaces data-lucide for cross-framework reliance) -->
     <svg id="eye-icon-svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -162,7 +153,7 @@
       </div>
 
       <div class="flex items-center justify-between text-sm">
-        <label class="flex items-center space-x-2 text-slate-600 dark:text-slate-400 cursor-pointer">
+        <label class="flex items-center gap-2 text-slate-600 dark:text-slate-400 cursor-pointer">
           <input type="checkbox" class="w-4 h-4 text-primary border-slate-300 rounded focus:ring-primary accent-primary dark:accent-secondary">
           <span>Remember this computer</span>
         </label>

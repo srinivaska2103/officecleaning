@@ -41,7 +41,7 @@
         
         <!-- Logo -->
         <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse" id="nav-logo-link">
-          <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
             <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
@@ -55,9 +55,8 @@
         <!-- Controls -->
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
          
-          <button class="dir-toggle-btn flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold" title="Toggle Layout Direction">
+          <button class="dir-toggle-btn flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold transition-colors" title="Toggle Layout Direction">
             <span class="dir-toggle-text">LTR</span>
-            <i data-lucide="languages" class="w-4 h-4"></i>
           </button>
           <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
             <i class="theme-toggle-icon w-5 h-5" data-lucide="moon"></i>
@@ -71,7 +70,7 @@
   <!-- Title block -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <div class="text-center space-y-2">
-      <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white">Commercial Booking Wizard</h1>
+      <h1 class="text-3xl font-semibold text-slate-900 dark:text-white">Commercial Booking Wizard</h1>
       <p class="text-slate-500 text-sm">Design your facility maintenance contract in 5 simple steps.</p>
     </div>
   </section>
@@ -117,7 +116,7 @@
         <i data-lucide="check" class="w-8 h-8"></i>
       </div>
       <div class="space-y-2">
-        <h2 class="text-2xl font-black text-slate-900 dark:text-white">Proposal Request Received!</h2>
+        <h2 class="text-2xl font-semibold text-slate-900 dark:text-white">Proposal Request Received!</h2>
         <p class="text-sm text-slate-500 dark:text-slate-400">Thank you for scheduling with CleanPro Facility. Your booking is pending manager validation.</p>
       </div>
       <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl border border-slate-100 dark:border-slate-750 inline-block font-semibold">
@@ -141,7 +140,7 @@
         <!-- STEP 1: Select Service & Frequency -->
         <div class="booking-step-content space-y-6">
           <div>
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Select Service Category</h3>
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Select Service Category</h3>
             <p class="text-xs text-slate-500 mt-0.5">Which sanitization services are requested for your offices?</p>
             <p class="text-xs text-red-500 font-semibold mt-1 hidden error-msg" id="error-step-1">Please select at least one service</p>
           </div>
@@ -188,7 +187,7 @@
           </div>
 
           <div class="border-t border-slate-200 dark:border-slate-700 pt-6">
-            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">Cleaning Frequency</h3>
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white mb-2">Cleaning Frequency</h3>
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
                 <input type="radio" name="frequency" value="one-time" class="sr-only">
@@ -223,7 +222,7 @@
         <!-- STEP 2: Choose Date & Time slot -->
         <div class="booking-step-content hidden space-y-6">
           <div>
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Select Date & Time</h3>
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Select Date & Time</h3>
             <p class="text-xs text-slate-500 mt-0.5">When should our certified cleaners arrive?</p>
           </div>
 
@@ -273,7 +272,7 @@
         <!-- STEP 3: Office Size & details -->
         <div class="booking-step-content hidden space-y-6">
           <div>
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Office Size & Layout</h3>
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Office Size & Layout</h3>
             <p class="text-xs text-slate-500 mt-0.5">Let us know about the scale of your workspaces.</p>
           </div>
 
@@ -300,7 +299,7 @@
           </div>
 
           <div class="border-t border-slate-200 dark:border-slate-700 pt-6 space-y-4">
-            <h4 class="font-bold text-slate-900 dark:text-white text-base">Select Optional Add-ons</h4>
+            <h4 class="font-semibold text-slate-900 dark:text-white text-base">Select Optional Add-ons</h4>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 flex items-center space-x-2.5 cursor-pointer">
                 <input type="checkbox" name="addons" value="carpet-shampoo" class="w-4 h-4 text-primary rounded accent-primary dark:accent-secondary">
@@ -335,7 +334,7 @@
 
     <div class="booking-step-content hidden space-y-6">
   <div>
-    <h3 class="text-xl font-bold text-slate-900 dark:text-white">Contact & Billing Info</h3>
+    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Contact & Billing Info</h3>
     <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Please provide company details for invoice references.</p>
   </div>
 
@@ -391,7 +390,7 @@
         <!-- STEP 5: Price Summary & Confirmation -->
         <div class="booking-step-content hidden space-y-6">
           <div>
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Verify Booking Details</h3>
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Verify Booking Details</h3>
             <p class="text-xs text-slate-500 mt-0.5">Please review your inputs before submitting this proposal.</p>
           </div>
 

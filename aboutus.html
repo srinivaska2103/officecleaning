@@ -42,7 +42,7 @@
     <!-- Logo -->
     <a href="index.html" class="flex items-center space-x-2 shrink-0" id="nav-logo-link">
       <!-- SVG Code Remains Same -->
-        <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
             <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
@@ -70,9 +70,8 @@
     <!-- Navbar Controls -->
     <!-- Added shrink-0 to prevent these buttons from squishing -->
     <div class="hidden lg:flex items-center space-x-3 shrink-0">
-      <button class="dir-toggle-btn flex items-center space-x-1 px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold">
+      <button class="dir-toggle-btn px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-colors" title="Toggle Layout Direction">
         <span class="dir-toggle-text">LTR</span>
-        <i data-lucide="languages" class="w-3 h-3"></i>
       </button>
       
       <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
@@ -85,7 +84,7 @@
 
     <!-- Hamburger Icon for Mobile -->
     <div class="flex items-center lg:hidden space-x-2">
-      <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200"><i data-lucide="menu" class="w-6 h-6"></i></button>
+      <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 flex items-center justify-center"><i data-lucide="menu" class="w-6 h-6"></i></button>
     </div>
 
   </div>
@@ -106,11 +105,10 @@
   <!-- Row 1: System Control Settings (Direction & Theme) -->
   <div class="flex items-center gap-2 w-full">
     <!-- Direction Toggle Button -->
-    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors">
+    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors" title="Toggle Layout Direction">
       <span>Layout Direction</span>
       <span class="flex items-center gap-1">
         <span class="dir-toggle-text text-xs text-primary dark:text-secondary font-bold">LTR</span>
-        <i data-lucide="languages" class="w-4 h-4 text-slate-400"></i>
       </span>
     </button>
     
@@ -145,7 +143,7 @@
         <!-- Left: Text -->
         <div class="space-y-6">
           <span class="inline-block text-xs font-extrabold text-primary dark:text-secondary uppercase tracking-widest bg-primary/10 dark:bg-secondary/10 px-3 py-1.5 rounded-full">Since 2011</span>
-          <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">Trusted Commercial Cleaning Experts</h1>
+          <h1 class="text-4xl lg:text-5xl font-semibold text-slate-900 dark:text-white leading-tight">Trusted Commercial Cleaning Experts</h1>
           <p class="text-lg text-slate-600 dark:text-slate-400 w-full max-w-prose">CleanPro has been delivering certified, eco-friendly, and precision-driven commercial cleaning since 2011. We serve offices, hospitals, logistics hubs, and corporate campuses.</p>
           <div class="flex flex-wrap gap-4">
             <a href="booknow.html" class="bg-primary hover:bg-primary-light text-white font-bold px-6 py-3 rounded-xl shadow-lg transition-all">Book a Consultation</a>
@@ -158,16 +156,20 @@
           </div>
         </div>
         <!-- Right: Image -->
-        <div class="relative">
-          <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-            <img src="assets/abthero" alt="CleanPro Professional Team" class="w-full h-80 lg:h-[480px] object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
-          </div>
-          <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 rounded-2xl p-4 shadow-xl border border-slate-100 dark:border-slate-700">
-            <div class="flex items-center space-x-3">
-              <span class="p-2.5 bg-secondary/10 rounded-xl"><i data-lucide="shield-check" class="w-6 h-6 text-secondary"></i></span>
-              <div><p class="font-bold text-slate-900 dark:text-white text-sm">ISO 9001 Certified</p><p class="text-xs text-slate-500">Quality Assured Operations</p></div>
+        <div class="relative flex justify-center items-center mt-10 lg:mt-0">
+          <div class="absolute -top-4 -left-4 sm:-left-6 bg-white dark:bg-slate-900 shadow-xl rounded-2xl p-4 flex items-center gap-3 border border-slate-100 dark:border-slate-800 z-20">
+            <div class="p-2 bg-secondary/10 rounded-lg text-secondary">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
             </div>
+            <div class="text-left">
+              <h5 class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">ISO 9001 Certified</h5>
+              <p class="text-[10px] text-slate-500 font-semibold">Quality Assured Operations</p>
+            </div>
+          </div>
+
+          <div class="relative w-full aspect-square max-w-[420px] rounded-3xl overflow-hidden border-8 border-white dark:border-slate-900 shadow-2xl transition-transform duration-500 hover:scale-[1.01]">
+            <img src="assets/abthero" alt="CleanPro Professional Team" class="w-full h-full object-cover object-top">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
           </div>
         </div>
       </div>
@@ -184,7 +186,7 @@
       <!-- Left Column: Rich Context (Spans 6 tracks) -->
       <div class="space-y-6 text-left reveal-on-scroll reveal-fade-left">
         <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Our Heritage</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">Our Journey to Workspace Excellence</h2>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-white leading-tight">Our Journey to Workspace Excellence</h2>
         <div class="space-y-4 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
           <p>
             Founded in 2011 by industry veterans, CleanPro started with a simple vision: to bring scientific precision, corporate integrity, and strict accountability to commercial janitorial operations. We recognized that businesses needed more than just a surface clean—they required a sterile, healthy environment where their teams could excel without compromise.
@@ -228,7 +230,7 @@
         <!-- Mission -->
         <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm space-y-4">
           <span class="p-3 bg-primary/10 text-primary dark:text-secondary rounded-xl inline-block"><i data-lucide="target" class="w-6 h-6"></i></span>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white">Our Mission</h3>
+          <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Our Mission</h3>
           <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed min-h-[96px] w-full">
             To provide safe, immaculate, and pathogen-free workspaces that promote professional yes  productivity, while remaining committed to absolute environmental sustainability.
           </p>
@@ -237,7 +239,7 @@
         <!-- Vision -->
         <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm space-y-4">
           <span class="p-3 bg-primary/10 text-primary dark:text-secondary rounded-xl inline-block"><i data-lucide="eye" class="w-6 h-6"></i></span>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white">Our Vision</h3>
+          <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Our Vision</h3>
           <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed min-h-[96px] w-full">
             To define the global standards for commercial cleaning by integrating automated auditing, green cleaning solutions, and standard staff education programs. We strive to lead corporate facility.
         </div>
@@ -245,7 +247,7 @@
         <!-- Values -->
         <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm space-y-4">
           <span class="p-3 bg-primary/10 text-primary dark:text-secondary rounded-xl inline-block"><i data-lucide="shield" class="w-6 h-6"></i></span>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white">Our Core Values</h3>
+          <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Our Core Values</h3>
           <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed min-h-[96px] w-full">
             Integrity, green safety standards, client accountability, continuous team training, and verifiable operational excellence in every clean. We guarantee transparent communications.
           </p>
@@ -260,7 +262,7 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 space-y-4">
         <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Milestones</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">CleanPro Corporate History</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">CleanPro Corporate History</h2>
         <p class="text-slate-600 dark:text-slate-400">Our history is built on consistent quality, certifications, and solid customer relations.</p>
       </div>
 
@@ -270,7 +272,7 @@
         <div class="relative pl-8 rtl:pl-0 rtl:pr-8">
           <div class="absolute -left-[9px] rtl:-right-[9px] top-1.5 w-4 h-4 rounded-full bg-secondary border-4 border-white dark:border-slate-900"></div>
           <span class="text-xs font-bold text-secondary">2011</span>
-          <h4 class="font-bold text-slate-900 dark:text-white text-base">Inception & First Office Contracts</h4>
+          <h4 class="font-semibold text-slate-900 dark:text-white text-base">Inception & First Office Contracts</h4>
           <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
             CleanPro is founded with just 5 cleaning specialists, servicing local Manhattan business offices.
           </p>
@@ -280,7 +282,7 @@
         <div class="relative pl-8 rtl:pl-0 rtl:pr-8">
           <div class="absolute -left-[9px] rtl:-right-[9px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-slate-900"></div>
           <span class="text-xs font-bold text-primary dark:text-secondary">2015</span>
-          <h4 class="font-bold text-slate-900 dark:text-white text-base">Statewide Expansion & Eco Initiative</h4>
+          <h4 class="font-semibold text-slate-900 dark:text-white text-base">Statewide Expansion & Eco Initiative</h4>
           <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
             We introduce Green Seal products as our company-wide default standard and expand our operations across the tri-state area.
           </p>
@@ -290,7 +292,7 @@
         <div class="relative pl-8 rtl:pl-0 rtl:pr-8">
           <div class="absolute -left-[9px] rtl:-right-[9px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-slate-900"></div>
           <span class="text-xs font-bold text-primary dark:text-secondary">2020</span>
-          <h4 class="font-bold text-slate-900 dark:text-white text-base">COVID Disinfection Compliance</h4>
+          <h4 class="font-semibold text-slate-900 dark:text-white text-base">COVID Disinfection Compliance</h4>
           <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
             We certify our staff on CDC healthcare-grade sanitization standards, supporting local offices and hospitals during critical operations.
           </p>
@@ -300,7 +302,7 @@
         <div class="relative pl-8 rtl:pl-0 rtl:pr-8">
           <div class="absolute -left-[9px] rtl:-right-[9px] top-1.5 w-4 h-4 rounded-full bg-secondary border-4 border-white dark:border-slate-900"></div>
           <span class="text-xs font-bold text-secondary">2026</span>
-          <h4 class="font-bold text-slate-900 dark:text-white text-base">ISO 9001 Certification & Digital Portals</h4>
+          <h4 class="font-semibold text-slate-900 dark:text-white text-base">ISO 9001 Certification & Digital Portals</h4>
           <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
             We launch our client portal alongside ISO 9001 operational auditing, managing facility solutions in multiple cities.
           </p>
@@ -316,7 +318,7 @@
       
       <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
         <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Our Leaders</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Meet Our Executive Team</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Meet Our Executive Team</h2>
         <p class="text-slate-600 dark:text-slate-400">Our operations are managed by certified facilities specialists and hygiene auditors.</p>
       </div>
 
@@ -325,10 +327,10 @@
         <!-- Team Member 1 -->
         <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm group">
           <div class="relative h-64 overflow-hidden">
-            <img src="assets/t1" alt="CEO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/t1" alt="CEO" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
           </div>
           <div class="p-6 text-center">
-            <h4 class="font-bold text-slate-900 dark:text-white text-lg">Elizabeth Bennett</h4>
+            <h4 class="font-semibold text-slate-900 dark:text-white text-lg">Elizabeth Bennett</h4>
             <p class="text-xs text-slate-500 mb-4">Founder & CEO</p>
             <div class="flex justify-center space-x-2.5 rtl:space-x-reverse">
               <a href="#" class="text-slate-400 hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
@@ -340,10 +342,10 @@
         <!-- Team Member 2 -->
         <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm group">
           <div class="relative h-64 overflow-hidden">
-            <img src="assets/t2" alt="COO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/t2" alt="COO" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
           </div>
           <div class="p-6 text-center">
-            <h4 class="font-bold text-slate-900 dark:text-white text-lg">Marcus Vance</h4>
+            <h4 class="font-semibold text-slate-900 dark:text-white text-lg">Marcus Vance</h4>
             <p class="text-xs text-slate-500 mb-4">Chief Operations Officer</p>
             <div class="flex justify-center space-x-2.5 rtl:space-x-reverse">
               <a href="#" class="text-slate-400 hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
@@ -355,10 +357,10 @@
         <!-- Team Member 3 -->
         <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm group">
           <div class="relative h-64 overflow-hidden">
-            <img src="assets/t3" alt="Quality Lead" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/t3" alt="Quality Lead" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
           </div>
           <div class="p-6 text-center">
-            <h4 class="font-bold text-slate-900 dark:text-white text-lg">Clara Reynolds</h4>
+            <h4 class="font-semibold text-slate-900 dark:text-white text-lg">Clara Reynolds</h4>
             <p class="text-xs text-slate-500 mb-4">Director of Quality Assurance</p>
             <div class="flex justify-center space-x-2.5 rtl:space-x-reverse">
               <a href="#" class="text-slate-400 hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
@@ -370,10 +372,10 @@
         <!-- Team Member 4 -->
         <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm group">
           <div class="relative h-64 overflow-hidden">
-            <img src="assets/t4" alt="Training Lead" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/t4" alt="Training Lead" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
           </div>
           <div class="p-6 text-center">
-            <h4 class="font-bold text-slate-900 dark:text-white text-lg">Jonathan Drake</h4>
+            <h4 class="font-semibold text-slate-900 dark:text-white text-lg">Jonathan Drake</h4>
             <p class="text-xs text-slate-500 mb-4">Head of Employee Training</p>
             <div class="flex justify-center space-x-2.5 rtl:space-x-reverse">
               <a href="#" class="text-slate-400 hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
@@ -397,14 +399,14 @@
         <div class="absolute -top-6 -left-6 w-64 h-64 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl -z-10"></div>
         
         <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-slate-50 dark:border-slate-800/80 transition-transform duration-500 hover:scale-[1.01]">
-          <img src="assets/abtimg1" alt="Pristine Corporate Cleaning" class="w-full h-80 object-cover">
+          <img src="assets/HEPA Filtration Vacuums" alt="Pristine Corporate Cleaning" class="w-full h-80 object-cover">
         </div>
       </div>
       
       <!-- Right Column: Premium Text & Subgrid Metrics Matrix -->
       <div class="space-y-6 text-left reveal-on-scroll reveal-fade-right">
         <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Our Quality Commitment</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">Advanced Care &amp; Clean Standards</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white leading-tight">Advanced Care &amp; Clean Standards</h2>
         <p class="text-slate-600 dark:text-slate-400 w-full text-sm sm:text-base leading-relaxed">
           Every CleanPro operation utilizes professional-grade certified solutions, premium cross-contamination microfiber setups, and industrial HEPA-filtered vacuum systems to maximize clean room-grade sanitization efficiency.
         </p>
@@ -419,9 +421,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
               </svg>
             </div>
-            <div>
-              <h4 class="font-bold text-slate-900 dark:text-white text-sm">ISO Certified Standards</h4>
-              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex-grow leading-relaxed">All operations meet rigorous structural validation targets for facility use.</p>
+            <div class="min-w-0 flex-1">
+              <h4 class="font-semibold text-slate-900 dark:text-white text-sm truncate">ISO Certified</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex-grow leading-relaxed break-words">All operations meet rigorous structural validation targets for facility use.</p>
             </div>
           </div>
           
@@ -429,12 +431,12 @@
           <div class="flex items-start space-x-3 p-4 bg-primary/5 dark:bg-primary/10 rounded-2xl border border-primary/10 dark:border-primary/20 transition-colors duration-300">
             <div class="text-primary dark:text-secondary mt-0.5 shrink-0">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10</path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
               </svg>
             </div>
-            <div>
-              <h4 class="font-bold text-slate-900 dark:text-white text-sm">Cross-Contamination Protocol</h4>
-              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex-grow leading-relaxed">Color-coded microfiber management protects separate workspace surfaces.</p>
+            <div class="min-w-0 flex-1">
+              <h4 class="font-semibold text-slate-900 dark:text-white text-sm truncate">Microfiber Protocol</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex-grow leading-relaxed break-words">Color-coded microfiber management protects separate workspace surfaces.</p>
             </div>
           </div>
           
@@ -446,8 +448,8 @@
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-slate-900 dark:text-white text-sm">HEPA Air Filtration</h4>
-              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex-grow leading-relaxed">Vacuums utilize HEPA-13 filters capturing 99.97% of micron dust particles.</p>
+              <h4 class="font-semibold text-slate-900 dark:text-white text-sm">HEPA Air Filtration</h4>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex-grow leading-relaxed">Vacuums utilize HEPA-13 filters capturing 99.97% of micron particles.</p>
             </div>
           </div>
           
@@ -459,7 +461,7 @@
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-slate-900 dark:text-white text-sm">Deep Fabric Extraction</h4>
+              <h4 class="font-semibold text-slate-900 dark:text-white text-sm">Deep Fabric Extraction</h4>
               <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 flex-grow leading-relaxed">Pressure-calibrated systems lift underlying heavy oil soils completely.</p>
             </div>
           </div>
@@ -476,29 +478,29 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 space-y-3">
         <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Recognition</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Awards &amp; Industry Certifications</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Awards &amp; Industry Certifications</h2>
         <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto w-full">Our commitment to excellence is recognized by leading industry bodies and environmental organizations.</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm text-center space-y-3">
           <i data-lucide="award" class="w-10 h-10 text-primary dark:text-secondary mx-auto"></i>
-          <h4 class="font-bold text-slate-900 dark:text-white">ISO 9001:2015</h4>
-          <p class="text-xs text-slate-500 min-h-[48px] w-full">Quality Management Systems certified for consistent service delivery excellence.</p>
+          <h4 class="font-semibold text-slate-900 dark:text-white">ISO 9001:2015</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 min-h-[48px] w-full">Quality Management Systems certified for consistent service delivery excellence.</p>
         </div>
         <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm text-center space-y-3">
           <i data-lucide="shield" class="w-10 h-10 text-primary dark:text-secondary mx-auto"></i>
-          <h4 class="font-bold text-slate-900 dark:text-white">OSHA Compliant</h4>
-          <p class="text-xs text-slate-500 min-h-[48px] w-full">Full compliance with OSHA Bloodborne Pathogen Standard and workplace safety protocols.</p>
+          <h4 class="font-semibold text-slate-900 dark:text-white">OSHA Compliant</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 min-h-[48px] w-full">Full compliance with OSHA Bloodborne Pathogen Standard and workplace safety protocols.</p>
         </div>
         <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm text-center space-y-3">
           <i data-lucide="star" class="w-10 h-10 text-primary dark:text-secondary mx-auto"></i>
-          <h4 class="font-bold text-slate-900 dark:text-white">ISSA CIMS Gold</h4>
-          <p class="text-xs text-slate-500 min-h-[48px] w-full">Cleaning Industry Management Standard Gold Certification for operational best practices.</p>
+          <h4 class="font-semibold text-slate-900 dark:text-white">ISSA CIMS Gold</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 min-h-[48px] w-full">Cleaning Industry Management Standard Gold Certification for operational best practices.</p>
         </div>
         <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm text-center space-y-3">
-          <i data-lucide="leaf" class="w-10 h-10 text-secondary mx-auto"></i>
-          <h4 class="font-bold text-slate-900 dark:text-white">Green Seal Partner</h4>
-          <p class="text-xs text-slate-500 min-h-[48px] w-full">Certified as a Green Seal Partner company for sustainable commercial cleaning operations.</p>
+          <i data-lucide="leaf" class="w-10 h-10 text-primary dark:text-secondary mx-auto"></i>
+          <h4 class="font-semibold text-slate-900 dark:text-white">Green Seal Partner</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 min-h-[48px] w-full">Certified as a Green Seal Partner company for sustainable commercial cleaning operations.</p>
         </div>
       </div>
     </div>
@@ -507,7 +509,7 @@
   <!-- CTA Banner -->
   <section class="py-16 bg-primary dark:bg-slate-800 border-t border-slate-100 dark:border-slate-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Ready to Partner with CleanPro?</h2>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ready to Partner with CleanPro?</h2>
       <p class="text-primary-light/80 dark:text-slate-400 max-w-2xl mx-auto w-full text-white/80">
         Experience premium, eco-friendly corporate cleaning solutions tailored to your team's specific working hours and operational budgets. Let us keep your facility spotless.
       </p>
@@ -526,15 +528,15 @@
         <!-- Logo and Brand -->
         <div class="lg:col-span-4 space-y-4">
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <svg class="h-8 w-8 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
               <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
               <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
-              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" />
+              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
               <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
               <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
             </svg>
-            <span class="text-lg font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+            <span class="text-lg md:text-xl font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed">
             CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
@@ -565,7 +567,7 @@
 
         <!-- Quick Links -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Navigation</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Navigation</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
             <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
@@ -578,7 +580,7 @@
 
         <!-- Extra Pages -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Utility</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Utility</h4>
           <ul class="space-y-2 text-sm">
           <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
             <li><a href="booknow.html" class="hover:text-white transition-colors">Book Now</a></li>
@@ -591,7 +593,7 @@
 
         <!-- Newsletter Area -->
         <div class="lg:col-span-4 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Newsletter</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Newsletter</h4>
           <p class="text-sm text-slate-400">Subscribe to receive facilities management insights and seasonal promotions.</p>
           <form class="space-y-2" id="footer-newsletter">
             <div class="relative">

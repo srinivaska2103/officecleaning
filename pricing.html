@@ -41,7 +41,7 @@
     <!-- Logo -->
     <a href="index.html" class="flex items-center space-x-2 shrink-0" id="nav-logo-link">
       <!-- SVG Code Remains Same -->
-        <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
             <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
@@ -69,9 +69,8 @@
     <!-- Navbar Controls -->
     <!-- Added shrink-0 to prevent these buttons from squishing -->
     <div class="hidden lg:flex items-center space-x-3 shrink-0">
-      <button class="dir-toggle-btn flex items-center space-x-1 px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold">
+      <button class="dir-toggle-btn px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-colors" title="Toggle Layout Direction">
         <span class="dir-toggle-text">LTR</span>
-        <i data-lucide="languages" class="w-3 h-3"></i>
       </button>
       
       <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
@@ -105,11 +104,10 @@
   <!-- Row 1: System Control Settings (Direction & Theme) -->
   <div class="flex items-center gap-2 w-full">
     <!-- Direction Toggle Button -->
-    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors">
+    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors" title="Toggle Layout Direction">
       <span>Layout Direction</span>
       <span class="flex items-center gap-1">
         <span class="dir-toggle-text text-xs text-primary dark:text-secondary font-bold">LTR</span>
-        <i data-lucide="languages" class="w-4 h-4 text-slate-400"></i>
       </span>
     </button>
     
@@ -143,7 +141,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
           <span class="inline-block text-xs font-extrabold text-secondary uppercase tracking-widest bg-secondary/20 px-3 py-1.5 rounded-full">Transparent Pricing</span>
-          <h1 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">Commercial Cleaning Plans for Every Scale</h1>
+          <h1 class="text-4xl lg:text-5xl font-semibold text-white leading-tight">Commercial Cleaning Plans for Every Scale</h1>
           <p class="text-lg text-slate-300 w-full max-w-prose">Choose from our flat-rate monthly contracts or use our interactive workspace estimator to calculate a custom cleaning plan that perfectly fits your team's budget and schedule.</p>
           <div class="flex flex-wrap gap-4">
             <a href="booknow.html" class="bg-secondary hover:bg-secondary-light text-slate-900 font-bold px-6 py-3 rounded-xl shadow-lg transition-all">Start a Quote</a>
@@ -193,7 +191,7 @@
         <div class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-750 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div class="space-y-6">
             <div>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Basic Maintenance</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Basic Maintenance</h3>
               <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">Bi-weekly basic dusting & floor sweeping shifts.</p>
             </div>
             <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
@@ -218,7 +216,7 @@
           <div class="absolute top-0 right-0 bg-primary dark:bg-secondary text-white dark:text-slate-900 text-xs font-bold px-4 py-1.5 rounded-bl-2xl">POPULAR PLAN</div>
           <div class="space-y-6">
             <div>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Commercial Pro</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Commercial Pro</h3>
               <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">Daily cleaning for standard growing corporate offices.</p>
             </div>
             <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
@@ -242,7 +240,7 @@
         <div class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-750 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div class="space-y-6">
             <div>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Premium Executive</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Premium Executive</h3>
               <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">24/7 dedicated porter cover for multistory headquarters.</p>
             </div>
             <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
@@ -272,7 +270,7 @@
       
       <div class="text-center mb-12 space-y-4">
         <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Custom Estimates</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Workspace Cost Estimator</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Workspace Cost Estimator</h2>
         <p class="text-slate-600 dark:text-slate-400">Adjust the dimensions and frequency below to calculate a custom operations estimate instantly.</p>
       </div>
 
@@ -304,7 +302,7 @@
         <!-- Dynamic Output -->
         <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl flex flex-col justify-between items-center text-center">
           <div class="space-y-2">
-            <h4 class="font-bold text-slate-800 dark:text-white uppercase tracking-wider text-sm">Estimated Clean Rate</h4>
+            <h4 class="font-semibold text-slate-800 dark:text-white uppercase tracking-wider text-sm">Estimated Clean Rate</h4>
             <p class="text-xs text-slate-500">Based on standard business dimensions</p>
           </div>
           <div>
@@ -325,7 +323,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-16 space-y-4">
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Feature Comparison Table</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Feature Comparison Table</h2>
         <p class="text-slate-600 dark:text-slate-400">Review exactly what services are included in each subscription level.</p>
       </div>
 
@@ -392,7 +390,7 @@
   <!-- CTA Banner -->
   <section class="py-16 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Save More on Premium Corporate Cleanings</h2>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-white">Save More on Premium Corporate Cleanings</h2>
       <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto min-h-[48px] w-full">
         Select a contract package or contact our coordinator to construct a custom facility sanitization budget. Get 20% off when billed annually.
       </p>
@@ -411,15 +409,15 @@
         <!-- Logo and Brand -->
         <div class="lg:col-span-4 space-y-4">
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <svg class="h-8 w-8 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
               <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
               <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
-              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" />
+              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
               <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
               <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
             </svg>
-            <span class="text-lg font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+            <span class="text-lg md:text-xl font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed">
             CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
@@ -450,7 +448,7 @@
 
         <!-- Quick Links -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Navigation</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Navigation</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
             <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
@@ -463,7 +461,7 @@
 
         <!-- Extra Pages -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Utility</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Utility</h4>
           <ul class="space-y-2 text-sm">
           <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
             <li><a href="booknow.html" class="hover:text-white transition-colors">Book Now</a></li>
@@ -476,7 +474,7 @@
 
         <!-- Newsletter Area -->
         <div class="lg:col-span-4 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Newsletter</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Newsletter</h4>
           <p class="text-sm text-slate-400">Subscribe to receive facilities management insights and seasonal promotions.</p>
           <form class="space-y-2" id="footer-newsletter">
             <div class="relative">

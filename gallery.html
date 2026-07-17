@@ -41,7 +41,7 @@
     <!-- Logo -->
     <a href="index.html" class="flex items-center space-x-2 shrink-0" id="nav-logo-link">
       <!-- SVG Code Remains Same -->
-        <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
             <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
@@ -69,9 +69,8 @@
     <!-- Navbar Controls -->
     <!-- Added shrink-0 to prevent these buttons from squishing -->
     <div class="hidden lg:flex items-center space-x-3 shrink-0">
-      <button class="dir-toggle-btn flex items-center space-x-1 px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold">
+      <button class="dir-toggle-btn px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-colors" title="Toggle Layout Direction">
         <span class="dir-toggle-text">LTR</span>
-        <i data-lucide="languages" class="w-3 h-3"></i>
       </button>
       
       <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
@@ -105,11 +104,10 @@
   <!-- Row 1: System Control Settings (Direction & Theme) -->
   <div class="flex items-center gap-2 w-full">
     <!-- Direction Toggle Button -->
-    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors">
+    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors" title="Toggle Layout Direction">
       <span>Layout Direction</span>
       <span class="flex items-center gap-1">
         <span class="dir-toggle-text text-xs text-primary dark:text-secondary font-bold">LTR</span>
-        <i data-lucide="languages" class="w-4 h-4 text-slate-400"></i>
       </span>
     </button>
     
@@ -142,7 +140,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
           <span class="inline-block text-xs font-extrabold text-secondary uppercase tracking-widest bg-secondary/20 px-3 py-1.5 rounded-full">Our Portfolio</span>
-          <h1 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">Visual Proof of Our Cleaning Excellence</h1>
+          <h1 class="text-4xl lg:text-5xl font-semibold text-white leading-tight">Visual Proof of Our Cleaning Excellence</h1>
           <p class="text-lg text-slate-300 w-full max-w-prose">Browse high-resolution visuals of our professional teams, industrial-grade equipment, and remarkable before-and-after facility transformations verified by our QA supervisors.</p>
           <div class="flex flex-wrap gap-4">
             <a href="booknow.html" class="bg-secondary hover:bg-secondary-light text-slate-900 font-bold px-6 py-3 rounded-xl shadow-lg transition-all">Book a Service</a>
@@ -196,7 +194,7 @@
             </div>
           </div>
           <div class="p-4">
-            <h3 class="font-bold text-slate-900 dark:text-white text-base">Executive Conference Room</h3>
+            <h3 class="font-semibold text-slate-900 dark:text-white text-base">Executive Conference Room</h3>
             <p class="text-xs text-slate-500 mt-0.5">Post-cleaning dust-free polishing</p>
           </div>
         </div>
@@ -210,7 +208,7 @@
             </div>
           </div>
           <div class="p-4">
-            <h3 class="font-bold text-slate-900 dark:text-white text-base">Skyscraper Glass Lobby</h3>
+            <h3 class="font-semibold text-slate-900 dark:text-white text-base">Skyscraper Glass Lobby</h3>
             <p class="text-xs text-slate-500 mt-0.5">Sanitized turnstiles and glass facades</p>
           </div>
         </div>
@@ -224,7 +222,7 @@
             </div>
           </div>
           <div class="p-4">
-            <h3 class="font-bold text-slate-900 dark:text-white text-base">Evening Operations Team</h3>
+            <h3 class="font-semibold text-slate-900 dark:text-white text-base">Evening Operations Team</h3>
             <p class="text-xs text-slate-500 mt-0.5">Certified janitors with green chemicals</p>
           </div>
         </div>
@@ -238,7 +236,7 @@
             </div>
           </div>
           <div class="p-4">
-            <h3 class="font-bold text-slate-900 dark:text-white text-base">HEPA Filtration Vacuums</h3>
+            <h3 class="font-semibold text-slate-900 dark:text-white text-base">HEPA Filtration Vacuums</h3>
             <p class="text-xs text-slate-500 mt-0.5">Quiet commercial grade dust removal</p>
           </div>
         </div>
@@ -252,7 +250,7 @@
             </div>
           </div>
           <div class="p-4">
-            <h3 class="font-bold text-slate-900 dark:text-white text-base">Carpet Restoration</h3>
+            <h3 class="font-semibold text-slate-900 dark:text-white text-base">Carpet Restoration</h3>
             <p class="text-xs text-slate-500 mt-0.5">Post steam extraction deep clean</p>
           </div>
         </div>
@@ -266,7 +264,7 @@
             </div>
           </div>
           <div class="p-4">
-            <h3 class="font-bold text-slate-900 dark:text-white text-base">Corporate Lounge Space</h3>
+            <h3 class="font-semibold text-slate-900 dark:text-white text-base">Corporate Lounge Space</h3>
             <p class="text-xs text-slate-500 mt-0.5">Furniture vacuumed and wood tables polished</p>
           </div>
         </div>
@@ -315,7 +313,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16 space-y-4">
         <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Transformation</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Before &amp; After: Real Client Spaces</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Before &amp; After: Real Client Spaces</h2>
         <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto w-full">Witness the dramatic difference our certified cleaning protocols make in real commercial environments — every result verified by our QA supervisor teams.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -330,7 +328,7 @@
               <span class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-2 py-0.5 rounded-md">After</span>
             </div>
           </div>
-          <h4 class="font-bold text-slate-900 dark:text-white">Corporate Office Lobby</h4>
+          <h4 class="font-semibold text-slate-900 dark:text-white">Corporate Office Lobby</h4>
           <p class="text-sm text-slate-500 w-full min-h-[40px]">Dust removal, floor polishing, and surface disinfection completed in 4 hours by a 3-person crew.</p>
         </div>
         <div class="space-y-3">
@@ -344,7 +342,7 @@
               <span class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-2 py-0.5 rounded-md">After</span>
             </div>
           </div>
-          <h4 class="font-bold text-slate-900 dark:text-white">Medical Lab Sterilization</h4>
+          <h4 class="font-semibold text-slate-900 dark:text-white">Medical Lab Sterilization</h4>
           <p class="text-sm text-slate-500 w-full min-h-[40px]">CDC-grade disinfection applied to all surfaces using UV-C light and hospital-grade quaternary ammonium solutions.</p>
         </div>
         <div class="space-y-3">
@@ -358,7 +356,7 @@
               <span class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-2 py-0.5 rounded-md">After</span>
             </div>
           </div>
-          <h4 class="font-bold text-slate-900 dark:text-white">Industrial Warehouse Floor</h4>
+          <h4 class="font-semibold text-slate-900 dark:text-white">Industrial Warehouse Floor</h4>
           <p class="text-sm text-slate-500 w-full min-h-[40px]">Automated scrubber system removed grease, oil stains, and heavy debris. Sealed with protective industrial coating.</p>
         </div>
       </div>
@@ -371,28 +369,28 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="space-y-6">
           <span class="text-sm font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Quality Assurance</span>
-          <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Our 5-Step Photo QA Verification Process</h2>
+          <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Our 5-Step Photo QA Verification Process</h2>
           <p class="text-slate-600 dark:text-slate-400 w-full">Every cleaning shift is photo-documented and reviewed by a dedicated QA supervisor before the client is notified. No space is marked complete without photographic sign-off.</p>
           <div class="space-y-4">
             <div class="flex items-start space-x-4">
               <span class="flex-shrink-0 w-9 h-9 bg-primary text-white font-bold rounded-full flex items-center justify-center text-sm">1</span>
-              <div><h4 class="font-bold text-slate-900 dark:text-white">Pre-Clean Inspection Photos</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Supervisor photographs the space before work begins to document initial condition and set cleaning scope.</p></div>
+              <div><h4 class="font-semibold text-slate-900 dark:text-white">Pre-Clean Inspection Photos</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Supervisor photographs the space before work begins to document initial condition and set cleaning scope.</p></div>
             </div>
             <div class="flex items-start space-x-4">
               <span class="flex-shrink-0 w-9 h-9 bg-primary text-white font-bold rounded-full flex items-center justify-center text-sm">2</span>
-              <div><h4 class="font-bold text-slate-900 dark:text-white">Active Cleaning Documentation</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Team leaders capture photos of each major task completed: floors, restrooms, kitchens, and common areas.</p></div>
+              <div><h4 class="font-semibold text-slate-900 dark:text-white">Active Cleaning Documentation</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Team leaders capture photos of each major task completed: floors, restrooms, kitchens, and common areas.</p></div>
             </div>
             <div class="flex items-start space-x-4">
               <span class="flex-shrink-0 w-9 h-9 bg-secondary text-white font-bold rounded-full flex items-center justify-center text-sm">3</span>
-              <div><h4 class="font-bold text-slate-900 dark:text-white">Post-Clean QA Walkthrough</h4><p class="text-sm text-slate-500 mt-0.5 w-full">QA supervisor conducts a final walkthrough and photographs each zone against our standardized cleaning checklist.</p></div>
+              <div><h4 class="font-semibold text-slate-900 dark:text-white">Post-Clean QA Walkthrough</h4><p class="text-sm text-slate-500 mt-0.5 w-full">QA supervisor conducts a final walkthrough and photographs each zone against our standardized cleaning checklist.</p></div>
             </div>
             <div class="flex items-start space-x-4">
               <span class="flex-shrink-0 w-9 h-9 bg-secondary text-white font-bold rounded-full flex items-center justify-center text-sm">4</span>
-              <div><h4 class="font-bold text-slate-900 dark:text-white">Digital Report Upload</h4><p class="text-sm text-slate-500 mt-0.5 w-full">All photos are uploaded to the client's secure portal dashboard with timestamps and crew member IDs.</p></div>
+              <div><h4 class="font-semibold text-slate-900 dark:text-white">Digital Report Upload</h4><p class="text-sm text-slate-500 mt-0.5 w-full">All photos are uploaded to the client's secure portal dashboard with timestamps and crew member IDs.</p></div>
             </div>
             <div class="flex items-start space-x-4">
               <span class="flex-shrink-0 w-9 h-9 bg-primary text-white font-bold rounded-full flex items-center justify-center text-sm">5</span>
-              <div><h4 class="font-bold text-slate-900 dark:text-white">Client Approval & Sign-Off</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Client receives a completion notification and reviews photos before digitally approving the shift as complete.</p></div>
+              <div><h4 class="font-semibold text-slate-900 dark:text-white">Client Approval & Sign-Off</h4><p class="text-sm text-slate-500 mt-0.5 w-full">Client receives a completion notification and reviews photos before digitally approving the shift as complete.</p></div>
             </div>
           </div>
         </div>
@@ -404,7 +402,7 @@
   </section>
   <section class="py-16 md:py-24 bg-primary dark:bg-slate-800">
   <div class="max-w-5xl mx-auto px-4 text-center">
-    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">
+    <h2 class="text-3xl md:text-5xl font-semibold text-white mb-6">
       Inspired by our results?
     </h2>
     <p class="text-blue-50 text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90">
@@ -428,15 +426,15 @@
         <!-- Logo and Brand -->
         <div class="lg:col-span-4 space-y-4">
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <svg class="h-8 w-8 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
               <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
               <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
-              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" />
+              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
               <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
               <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
             </svg>
-            <span class="text-lg font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+            <span class="text-lg md:text-xl font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed">
             CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
@@ -467,7 +465,7 @@
 
         <!-- Quick Links -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Navigation</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Navigation</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
             <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
@@ -480,7 +478,7 @@
 
         <!-- Extra Pages -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Utility</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Utility</h4>
           <ul class="space-y-2 text-sm">
           <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
             <li><a href="booknow.html" class="hover:text-white transition-colors">Book Now</a></li>
@@ -493,7 +491,7 @@
 
         <!-- Newsletter Area -->
         <div class="lg:col-span-4 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Newsletter</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Newsletter</h4>
           <p class="text-sm text-slate-400">Subscribe to receive facilities management insights and seasonal promotions.</p>
           <form class="space-y-2" id="footer-newsletter">
             <div class="relative">

@@ -41,7 +41,7 @@
     <!-- Logo -->
     <a href="index.html" class="flex items-center space-x-2 shrink-0" id="nav-logo-link">
       <!-- SVG Code Remains Same -->
-        <svg class="h-10 w-10 text-primary dark:text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
             <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
@@ -69,9 +69,8 @@
     <!-- Navbar Controls -->
     <!-- Added shrink-0 to prevent these buttons from squishing -->
     <div class="hidden lg:flex items-center space-x-3 shrink-0">
-      <button class="dir-toggle-btn flex items-center space-x-1 px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold">
+      <button class="dir-toggle-btn px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-colors" title="Toggle Layout Direction">
         <span class="dir-toggle-text">LTR</span>
-        <i data-lucide="languages" class="w-3 h-3"></i>
       </button>
       
       <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
@@ -105,11 +104,10 @@
   <!-- Row 1: System Control Settings (Direction & Theme) -->
   <div class="flex items-center gap-2 w-full">
     <!-- Direction Toggle Button -->
-    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors">
+    <button class="dir-toggle-btn flex-grow flex items-center justify-between px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-sm font-semibold transition-colors" title="Toggle Layout Direction">
       <span>Layout Direction</span>
       <span class="flex items-center gap-1">
         <span class="dir-toggle-text text-xs text-primary dark:text-secondary font-bold">LTR</span>
-        <i data-lucide="languages" class="w-4 h-4 text-slate-400"></i>
       </span>
     </button>
     
@@ -147,7 +145,7 @@
             <i data-lucide="sparkles" class="w-3.5 h-3.5 text-secondary"></i>
             <span>Commercial & Corporate Sanitation</span>
           </span>
-          <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">Our Services</h1>
+          <h1 class="text-4xl sm:text-5xl font-semibold text-slate-900 dark:text-white leading-tight">Our Services</h1>
           <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg max-w-xl mx-auto lg:mx-0">Explore our wide range of professional facility maintenance and commercial janitorial solutions. Fully insured, certified crew, and green seal compliance.</p>
         </div>
         <!-- Right Image Graphic -->
@@ -156,7 +154,7 @@
             <img src="assets/servicehero" alt="CleanPro Service Operations" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent flex flex-col justify-end p-4 text-white">
               <p class="text-xs uppercase font-bold text-secondary">Service Standards</p>
-              <h4 class="text-sm font-bold mt-0.5">Vetted & Insured Cleaning Crew</h4>
+              <h4 class="text-sm font-semibold mt-0.5">Vetted & Insured Cleaning Crew</h4>
             </div>
           </div>
         </div>
@@ -214,7 +212,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="building" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Office Cleaning</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Office Cleaning</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Regular recurring dustings, sweeping, and trash management for active commercial buildings. Keeps workspaces pristine and staff focused.
@@ -240,7 +238,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="briefcase" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Commercial Cleaning</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Commercial Cleaning</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Large-scale commercial hygiene programs tailored specifically for multi-tenant retail blocks, bank headquarters, and showrooms.
@@ -266,7 +264,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="settings" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Industrial Cleaning</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Industrial Cleaning</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Restoring cleanliness in warehouses, manufacturing floors, and logistics properties with safety-compliant machinery and practices.
@@ -292,7 +290,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="users" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Housekeeping Services</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Housekeeping Services</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Daily corporate porter coverage, washroom restocking audits, lobby greeting floor care, and persistent common area checks.
@@ -318,7 +316,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="zap" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Deep Cleaning</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Deep Cleaning</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               High-intensity detail operations focusing on window tracks, vent grilles, under-furniture sanitation, and tile grout restorations.
@@ -344,7 +342,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="sun" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Glass Cleaning</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Glass Cleaning</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Streak-free exterior window washing, interior glass partitions polishing, mirrored surface treatments, and high-rise glass care.
@@ -370,7 +368,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="database" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Carpet Cleaning</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Carpet Cleaning</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Hot-water extraction shampooing, persistent carpet stains removal, fabric sanitizing, and deep fiber vacuuming for corridors.
@@ -396,7 +394,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="smile" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Sofa & Upholstery</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Sofa & Upholstery</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Gentle eco-friendly foam cleaning for corporate lobbies sofas, task chairs fabrics sanitizing, and reception lounge conditioning.
@@ -422,7 +420,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="layers" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Floor Care & Polish</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Floor Care & Polish</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Heavy duty buffing and waxing, hardwood shine restorations, vinyl tile strip-and-wax procedures, and concrete sealer applications.
@@ -448,7 +446,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="shield-check" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Disinfection & Sanitizing</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Disinfection & Sanitizing</h3>
             </div>
             <p class="text-sm text-slate-650 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Electrostatic sprayer sanitizing, EPA-registered viral pathogen clearing, high-touch surface sterilizations, and clinical standards.
@@ -474,7 +472,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="clipboard" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Facility Management</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Facility Management</h3>
             </div>
             <p class="text-sm text-slate-655 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Total operational oversight of your properties: managing light fixtures, HVAC filter schedules, building repairs, and supplies restocking.
@@ -500,7 +498,7 @@
           <div class="p-6 flex flex-col justify-between flex-grow space-y-4">
             <div class="flex items-center space-x-2 text-primary dark:text-secondary rtl:space-x-reverse">
               <i data-lucide="trash" class="w-5 h-5"></i>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Waste Management</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Waste Management</h3>
             </div>
             <p class="text-sm text-slate-655 dark:text-slate-400 flex-grow min-h-[80px] w-full leading-relaxed">
               Responsible, ecological waste sorting, paper shredding bins clearance, recycling management, and hazardous waste programs.
@@ -527,7 +525,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
         <span class="text-xs font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Industrial Strength & Safety</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Our Specialized Equipment & Green Inventory</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Our Specialized Equipment & Green Inventory</h2>
         <p class="text-slate-650 dark:text-slate-400">We utilize commercial-grade, safety-audited machinery and bio-based products to render a deep sanitizing clean without releasing toxic compounds.</p>
       </div>
 
@@ -538,7 +536,7 @@
             <div class="p-3.5 bg-primary/10 text-primary dark:text-secondary w-fit rounded-xl">
               <i data-lucide="wind" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white">True HEPA Filtration Vacuums</h3>
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">True HEPA Filtration Vacuums</h3>
             <p class="text-sm text-slate-655 dark:text-slate-400 leading-relaxed min-h-[80px] w-full">Our vacuums capture 99.97% of fine particles, dust mites, pollen, and airborne corporate allergens down to 0.3 microns, improving indoor office air quality instantly.</p>
           </div>
           <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-100/60 dark:bg-emerald-950/60 px-3 py-1 rounded-full w-fit mt-4">Standard Issue</span>
@@ -550,7 +548,7 @@
             <div class="p-3.5 bg-primary/10 text-primary dark:text-secondary w-fit rounded-xl">
               <i data-lucide="shield" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white">EPA-Registered Greens-Solutions</h3>
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">EPA-Registered Greens-Solutions</h3>
             <p class="text-sm text-slate-655 dark:text-slate-400 leading-relaxed min-h-[80px] w-full">We formulate cleaning solutions from plant-derived organic chemistry. 100% biodegradable, non-toxic, and free from volatile organic compounds.</p>
           </div>
           <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-100/60 dark:bg-emerald-950/60 px-3 py-1 rounded-full w-fit mt-4">Bio-Based Certified</span>
@@ -562,7 +560,7 @@
             <div class="p-3.5 bg-primary/10 text-primary dark:text-secondary w-fit rounded-xl">
               <i data-lucide="zap" class="w-6 h-6"></i>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Electrostatic Sanitizing Sprayers</h3>
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Electrostatic Sanitizing Sprayers</h3>
             <p class="text-sm text-slate-655 dark:text-slate-400 leading-relaxed min-h-[80px] w-full">Our misting squads use electrical charging technologies to wrap sanitizers uniformly around objects, providing total clinical sanitization coverage for keyboards.</p>
           </div>
           <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-100/60 dark:bg-emerald-950/60 px-3 py-1 rounded-full w-fit mt-4">Pathogen Clearance</span>
@@ -576,7 +574,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
         <span class="text-xs font-extrabold text-primary dark:text-secondary uppercase tracking-wider">Operationale</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">Our 4-Step Onboarding & Execution Flow</h2>
+        <h2 class="text-3xl font-semibold text-slate-900 dark:text-white">Our 4-Step Onboarding & Execution Flow</h2>
         <p class="text-slate-650 dark:text-slate-400">From the initial quote to verified QA checks, we make facility management seamless and stress-free.</p>
       </div>
 
@@ -587,28 +585,28 @@
         <!-- Step 1 -->
         <div class="relative z-10 flex flex-col items-center text-center space-y-3">
           <div class="w-16 h-16 rounded-full bg-primary text-white dark:bg-secondary dark:text-slate-900 flex items-center justify-center font-bold text-lg border-4 border-slate-50 dark:border-slate-900 shadow">1</div>
-          <h4 class="text-lg font-bold text-slate-900 dark:text-white">Custom Contract </h4>
+          <h4 class="text-lg font-semibold text-slate-900 dark:text-white">Custom Contract </h4>
           <p class="text-xs text-slate-500 dark:text-slate-400 max-w-xs leading-relaxed min-h-[48px] w-full">Estimate service needs online or arrange a walkthrough with CleanPro contract auditors.</p>
         </div>
 
         <!-- Step 2 -->
         <div class="relative z-10 flex flex-col items-center text-center space-y-3">
           <div class="w-16 h-16 rounded-full bg-white text-slate-500 border-4 border-slate-200 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-350 flex items-center justify-center font-bold text-lg shadow">2</div>
-          <h4 class="text-lg font-bold text-slate-900 dark:text-white"> Scheduling</h4>
+          <h4 class="text-lg font-semibold text-slate-900 dark:text-white"> Scheduling</h4>
           <p class="text-xs text-slate-500 dark:text-slate-400 max-w-xs leading-relaxed min-h-[48px] w-full">We assign fully bonded, certified crews matched to your required operating hours.</p>
         </div>
 
         <!-- Step 3 -->
         <div class="relative z-10 flex flex-col items-center text-center space-y-3">
           <div class="w-16 h-16 rounded-full bg-white text-slate-500 border-4 border-slate-200 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-355 flex items-center justify-center font-bold text-lg shadow">3</div>
-          <h4 class="text-lg font-bold text-slate-900 dark:text-white">Shift Execution</h4>
+          <h4 class="text-lg font-semibold text-slate-900 dark:text-white">Shift Execution</h4>
           <p class="text-xs text-slate-500 dark:text-slate-400 max-w-xs leading-relaxed min-h-[48px] w-full">Our crew cleans according to high-detail checklists, with tracking active via site QR logs.</p>
         </div>
 
         <!-- Step 4 -->
         <div class="relative z-10 flex flex-col items-center text-center space-y-3">
           <div class="w-16 h-16 rounded-full bg-white text-slate-505 border-4 border-slate-200 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-355 flex items-center justify-center font-bold text-lg shadow">4</div>
-          <h4 class="text-lg font-bold text-slate-900 dark:text-white">QA Report Upload</h4>
+          <h4 class="text-lg font-semibold text-slate-900 dark:text-white">QA Report Upload</h4>
           <p class="text-xs text-slate-505 dark:text-slate-400 max-w-xs leading-relaxed min-h-[48px] w-full">Supervisors review the clean, uploading certified checklist results to your portal QR logs.</p>
         </div>
       </div>
@@ -618,7 +616,7 @@
   <!-- CTA Banner -->
   <section class="py-16 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Ready for a Cleaner, Safer Workspace?</h2>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-white">Ready for a Cleaner, Safer Workspace?</h2>
       <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto min-h-[48px] w-full">
         Select from our catalog of 12 commercial cleaning and facility management services. Get in touch with our experts to deploy a certified team to your facility today.
       </p>
@@ -637,15 +635,15 @@
         <!-- Logo and Brand -->
         <div class="lg:col-span-4 space-y-4">
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <svg class="h-8 w-8 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
               <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
               <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
-              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" />
+              <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
               <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
               <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
             </svg>
-            <span class="text-lg font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+            <span class="text-lg md:text-xl font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed">
             CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
@@ -676,7 +674,7 @@
 
         <!-- Quick Links -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Navigation</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Navigation</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
             <li><a href="home2.html" class="hover:text-white transition-colors">Home 2</a></li>
@@ -689,7 +687,7 @@
 
         <!-- Extra Pages -->
         <div class="lg:col-span-2 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Utility</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Utility</h4>
           <ul class="space-y-2 text-sm">
           <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
             <li><a href="booknow.html" class="hover:text-white transition-colors">Book Now</a></li>
@@ -702,7 +700,7 @@
 
         <!-- Newsletter Area -->
         <div class="lg:col-span-4 space-y-4">
-          <h4 class="text-white font-bold text-sm tracking-wider uppercase">Newsletter</h4>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase">Newsletter</h4>
           <p class="text-sm text-slate-400">Subscribe to receive facilities management insights and seasonal promotions.</p>
           <form class="space-y-2" id="footer-newsletter">
             <div class="relative">
