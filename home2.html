@@ -45,7 +45,7 @@
         <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
-            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" class="fill-primary dark:fill-white" />
             <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
             <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
             <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
@@ -70,11 +70,11 @@
     <!-- Navbar Controls -->
     <!-- Added shrink-0 to prevent these buttons from squishing -->
     <div class="hidden lg:flex items-center space-x-3 shrink-0">
-      <button class="dir-toggle-btn px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-colors" title="Toggle Layout Direction">
+      <button class="dir-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" title="Toggle Layout Direction">
         <span class="dir-toggle-text">LTR</span>
       </button>
       
-      <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
+      <button class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
         <i class="theme-toggle-icon w-4 h-4" data-lucide="moon"></i>
       </button>
 
@@ -492,19 +492,19 @@
             CleanPro holds verified credentials, ensuring that our sanitization standards align perfectly with corporate audit regulations.
           </p>
           <div class="grid grid-cols-2 gap-4">
-            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-850 flex items-center space-x-3 rtl:space-x-reverse shadow-sm">
+            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-800 flex items-center space-x-3 rtl:space-x-reverse shadow-sm">
               <i data-lucide="award" class="w-8 h-8 text-secondary"></i>
               <span class="text-sm font-bold text-slate-800 dark:text-white">ISO 9001 Audited</span>
             </div>
-            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-850 flex items-center space-x-3 rtl:space-x-reverse shadow-sm">
+            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-800 flex items-center space-x-3 rtl:space-x-reverse shadow-sm">
               <i data-lucide="shield" class="w-8 h-8 text-secondary"></i>
               <span class="text-sm font-bold text-slate-800 dark:text-white">OSHA Compliant</span>
             </div>
-            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-850 flex items-center space-x-3 rtl:space-x-reverse shadow-sm">
+            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-800 flex items-center space-x-3 rtl:space-x-reverse shadow-sm">
               <i data-lucide="leaf" class="w-8 h-8 text-secondary"></i>
               <span class="text-sm font-bold text-slate-800 dark:text-white">Green Seal Standard</span>
             </div>
-            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-850 flex items-center space-x-3 rtl:space-x-reverse shadow-sm">
+            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-800 flex items-center space-x-3 rtl:space-x-reverse shadow-sm">
               <i data-lucide="check-circle" class="w-8 h-8 text-secondary"></i>
               <span class="text-sm font-bold text-slate-800 dark:text-white">CDC Guidelines Standard</span>
             </div>
@@ -558,7 +558,7 @@
         <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed flex-grow">"CleanPro transformed our 12-floor headquarters. Their QA photo reporting and ISO-certified protocols gave us confidence that every shift was completed to the highest sanitation standard."</p>
         <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-100 dark:border-slate-700">
-          <img src="assets/b1" alt="Marcus Sterling" class="w-10 h-10 rounded-full object-cover">
+          <img src="assets/b1" alt="Marcus Sterling" class="w-10 h-10 rounded-full object-cover object-top">
           <div><p class="font-bold text-slate-900 dark:text-white text-sm">Marcus Sterling</p><p class="text-xs text-slate-500">COO, Nexus Buildings Corp</p></div>
         </div>
       </div>
@@ -569,7 +569,7 @@
         <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed flex-grow">"We switched from our previous vendor after seeing CleanPro's before-and-after results. The green chemical certifications mattered a lot for our lab environments — they delivered expectations."</p>
         <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-100 dark:border-slate-700">
-          <img src="assets/g22" alt="Dr. Evelyn Morris" class="w-10 h-10 rounded-full object-cover">
+          <img src="assets/g22" alt="Dr. Evelyn Morris" class="w-10 h-10 rounded-full object-cover object-top">
           <div><p class="font-bold text-slate-900 dark:text-white text-sm">Dr. Evelyn Morris</p><p class="text-xs text-slate-500">Lab Director, Apex Research Labs</p></div>
         </div>
       </div>
@@ -579,7 +579,7 @@
         <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed flex-grow">"Onboarding was seamless. From initial site audit to the first cleaning shift, the entire workflow was professional. The digital portal lets us track everything in real-time — highly recommended."</p>
         <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-100 dark:border-slate-700">
-          <img src="assets/b2" alt="James Caldwell" class="w-10 h-10 rounded-full object-cover">
+          <img src="assets/b2" alt="James Caldwell" class="w-10 h-10 rounded-full object-cover object-top">
           <div><p class="font-bold text-slate-900 dark:text-white text-sm">James Caldwell</p><p class="text-xs text-slate-500">Facilities Manager, Global Finance HQ</p></div>
         </div>
       </div>
@@ -592,7 +592,7 @@
   <section class="py-16 bg-primary dark:bg-slate-950 text-white border-t border-primary/20 dark:border-slate-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
       <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Ready to Elevate Your Workspace Standards?</h2>
-      <p class="text-slate-350 max-w-2xl mx-auto min-h-[48px] w-full">
+      <p class="text-slate-300 max-w-2xl mx-auto min-h-[48px] w-full">
         Partner with CleanPro today and receive fully insured, carbon-neutral, and supervisor-audited sanitization services that align with your corporate policies.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -613,12 +613,12 @@
             <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
               <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
-              <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+              <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" class="fill-primary dark:fill-white" />
               <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
               <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
               <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
             </svg>
-            <span class="text-lg md:text-xl font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+            <span class="text-lg md:text-xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed">
             CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
@@ -710,3 +710,19 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

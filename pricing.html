@@ -44,7 +44,7 @@
         <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
-            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" class="fill-primary dark:fill-white" />
             <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
             <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
             <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
@@ -69,11 +69,11 @@
     <!-- Navbar Controls -->
     <!-- Added shrink-0 to prevent these buttons from squishing -->
     <div class="hidden lg:flex items-center space-x-3 shrink-0">
-      <button class="dir-toggle-btn px-2 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-colors" title="Toggle Layout Direction">
+      <button class="dir-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" title="Toggle Layout Direction">
         <span class="dir-toggle-text">LTR</span>
       </button>
       
-      <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200">
+      <button class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
         <i class="theme-toggle-icon w-4 h-4" data-lucide="moon"></i>
       </button>
 
@@ -188,13 +188,13 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
         <!-- Basic Plan -->
-        <div class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-750 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div class="space-y-6">
             <div>
               <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Basic Maintenance</h3>
               <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">Bi-weekly basic dusting & floor sweeping shifts.</p>
             </div>
-            <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-4">
               <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$<span class="plan-price" data-monthly="399" data-annual="319">399</span></span>
               <span class="text-slate-500 text-xs">/month</span>
             </div>
@@ -203,7 +203,7 @@
               <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Workstation surface dusting</span></li>
               <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Trash & recycle collections</span></li>
               <li class="flex items-center space-x-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i><span>Restroom sanitizing shifts</span></li>
-              <li class="text-slate-350 line-through flex items-center space-x-2"><i data-lucide="x" class="text-slate-300 w-4 h-4"></i><span>Carpet hot steam extraction</span></li>
+              <li class="text-slate-300 line-through flex items-center space-x-2"><i data-lucide="x" class="text-slate-300 w-4 h-4"></i><span>Carpet hot steam extraction</span></li>
             </ul>
           </div>
           <div class="pt-8">
@@ -219,7 +219,7 @@
               <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Commercial Pro</h3>
               <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">Daily cleaning for standard growing corporate offices.</p>
             </div>
-            <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-4">
               <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$<span class="plan-price" data-monthly="799" data-annual="639">799</span></span>
               <span class="text-slate-500 text-xs">/month</span>
             </div>
@@ -237,13 +237,13 @@
         </div>
 
         <!-- Premium Plan -->
-        <div class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-750 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
           <div class="space-y-6">
             <div>
               <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Premium Executive</h3>
               <p class="text-xs text-slate-500 mt-1 min-h-[40px] w-full">24/7 dedicated porter cover for multistory headquarters.</p>
             </div>
-            <div class="border-t border-slate-200 dark:border-slate-750 pt-4">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-4">
               <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$<span class="plan-price" data-monthly="1499" data-annual="1199">1,499</span></span>
               <span class="text-slate-500 text-xs">/month</span>
             </div>
@@ -337,7 +337,7 @@
               <th class="p-4 font-bold">Premium</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-600 dark:text-slate-450 bg-white dark:bg-slate-900">
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-900">
             <tr>
               <td class="p-4 font-medium text-slate-900 dark:text-white">Dusting Workstations</td>
               <td class="p-4 text-emerald-500"><i data-lucide="check" class="w-5 h-5"></i></td>
@@ -412,12 +412,12 @@
             <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
               <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
-              <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+              <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" class="fill-primary dark:fill-white" />
               <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
               <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
               <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
             </svg>
-            <span class="text-lg md:text-xl font-bold tracking-tight text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
+            <span class="text-lg md:text-xl font-bold tracking-tight text-primary dark:text-white">CleanPro <span class="text-secondary font-medium">Facility</span></span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed">
             CleanPro Facility Management provides premium, green, and structured office and commercial cleaning services. Trusted by hundreds of organizations for sanitation compliance.
@@ -579,3 +579,19 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

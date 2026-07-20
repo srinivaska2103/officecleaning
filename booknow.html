@@ -44,7 +44,7 @@
           <svg class="h-10 w-10 text-secondary" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10C65 10 78 14 85 24C85 52 70 76 50 88C30 76 15 52 15 24C22 14 35 10 50 10Z" class="fill-current" />
             <path d="M35 65V35H55V45H65V65H35Z" fill="#E8F4FF" opacity="0.85" />
-            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" fill="#0F4C81" />
+            <path d="M45 42H48V45H45V42ZM45 50H48V53H45V50ZM58 52H61V55H58V52ZM58 59H61V62H58V59Z" class="fill-primary dark:fill-white" />
             <path d="M72 25L75 32L82 35L75 38L72 45L69 38L62 35L69 32L72 25Z" fill="#00A86B" class="animate-pulse" />
             <path d="M30 65H70L65 70H35L30 65Z" fill="#00A86B" />
             <rect x="47" y="70" width="6" height="12" rx="2" fill="#00A86B" />
@@ -55,10 +55,10 @@
         <!-- Controls -->
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
          
-          <button class="dir-toggle-btn flex items-center space-x-1 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold transition-colors" title="Toggle Layout Direction">
+          <button class="dir-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-semibold transition-colors" title="Toggle Layout Direction">
             <span class="dir-toggle-text">LTR</span>
           </button>
-          <button class="theme-toggle-btn p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
+          <button class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800" title="Toggle theme">
             <i class="theme-toggle-icon w-5 h-5" data-lucide="moon"></i>
           </button>
         </div>
@@ -119,7 +119,7 @@
         <h2 class="text-2xl font-semibold text-slate-900 dark:text-white">Proposal Request Received!</h2>
         <p class="text-sm text-slate-500 dark:text-slate-400">Thank you for scheduling with CleanPro Facility. Your booking is pending manager validation.</p>
       </div>
-      <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl border border-slate-100 dark:border-slate-750 inline-block font-semibold">
+      <div class="bg-slate-50 dark:bg-slate-900 p-4 rounded-xl border border-slate-100 dark:border-slate-800 inline-block font-semibold">
         <span class="text-slate-400 text-xs block uppercase">Request Reference Code</span>
         <span class="text-xl font-bold text-primary dark:text-secondary" id="booking-ref-id">CP-482019</span>
       </div>
@@ -189,21 +189,21 @@
           <div class="border-t border-slate-200 dark:border-slate-700 pt-6">
             <h3 class="text-base font-semibold text-slate-900 dark:text-white mb-2">Cleaning Frequency</h3>
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 flex flex-col items-center">
                 <input type="radio" name="frequency" value="one-time" class="sr-only">
                 <span class="text-xs font-bold text-slate-900 dark:text-white">One-Time</span>
               </label>
-              <label class="border-2 border-primary dark:border-secondary rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
+              <label class="border-2 border-primary dark:border-secondary rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 flex flex-col items-center">
                 <input type="radio" name="frequency" value="weekly" checked class="sr-only">
                 <span class="text-xs font-bold text-slate-900 dark:text-white">Weekly</span>
                 <span class="text-[9px] text-emerald-500 font-bold block">Save 20%</span>
               </label>
-              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 flex flex-col items-center">
                 <input type="radio" name="frequency" value="bi-weekly" class="sr-only">
                 <span class="text-xs font-bold text-slate-900 dark:text-white">Bi-Weekly</span>
                 <span class="text-[9px] text-emerald-500 font-bold block">Save 15%</span>
               </label>
-              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 flex flex-col items-center">
+              <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 flex flex-col items-center">
                 <input type="radio" name="frequency" value="monthly" class="sr-only">
                 <span class="text-xs font-bold text-slate-900 dark:text-white">Monthly</span>
                 <span class="text-[9px] text-emerald-500 font-bold block">Save 10%</span>
@@ -228,27 +228,27 @@
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-2">Preferred Date</label>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-2">Preferred Date</label>
               <input type="date" id="booking-date" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl py-3 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary" required>
               <p class="text-xs text-red-500 mt-1 hidden error-msg" id="error-date">Please pick a scheduled date</p>
             </div>
             
             <div>
-              <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase mb-2">Arrival Time Slot</label>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-2">Arrival Time Slot</label>
               <div class="grid grid-cols-2 gap-2" id="time-slots-container">
-                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 block">
+                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 block">
                   <input type="radio" name="time-slot" value="morning" class="sr-only">
                   <span class="text-xs font-semibold block text-slate-800 dark:text-slate-200">08:00 AM (Morning)</span>
                 </label>
-                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 block">
+                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 block">
                   <input type="radio" name="time-slot" value="midday" class="sr-only">
                   <span class="text-xs font-semibold block text-slate-800 dark:text-slate-200">12:00 PM (Midday)</span>
                 </label>
-                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 block">
+                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 block">
                   <input type="radio" name="time-slot" value="afternoon" class="sr-only">
                   <span class="text-xs font-semibold block text-slate-800 dark:text-slate-200">03:00 PM (Afternoon)</span>
                 </label>
-                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750 block">
+                <label class="border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 block">
                   <input type="radio" name="time-slot" value="overnight" class="sr-only">
                   <span class="text-xs font-semibold block text-slate-800 dark:text-slate-200">07:00 PM (Night)</span>
                 </label>
@@ -277,9 +277,9 @@
           </div>
 
           <div class="space-y-4">
-            <label class="block text-xs font-bold text-slate-700 dark:text-slate-350 uppercase">Approximate Total Office Dimensions</label>
+            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase">Approximate Total Office Dimensions</label>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <label class="border border-slate-200 dark:border-slate-750 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750">
+              <label class="border border-slate-200 dark:border-slate-800 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800">
                 <input type="radio" name="office-size" value="small" checked class="w-4 h-4 mt-1 text-primary focus:ring-primary accent-primary dark:accent-secondary">
                 <div>
                   <span class="font-bold text-slate-800 dark:text-white block text-sm">Under 1,000 sq ft</span>
@@ -287,7 +287,7 @@
                 </div>
               </label>
 
-              <label class="border border-slate-200 dark:border-slate-755 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-750">
+              <label class="border border-slate-200 dark:border-slate-700 rounded-2xl p-4 flex items-start space-x-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800">
                 <input type="radio" name="office-size" value="medium" class="w-4 h-4 mt-1 text-primary focus:ring-primary accent-primary dark:accent-secondary">
                 <div>
                   <span class="font-bold text-slate-800 dark:text-white block text-sm">1,000 - 3,000 sq ft</span>
@@ -434,3 +434,19 @@
   <script src="assets/js/booking.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
